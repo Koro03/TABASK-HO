@@ -1,3 +1,28 @@
 body{
     background-image: linear-gradient(to bottom, #212b61, #313068, #40346e, #4f3974, #5d3d7a);
 }
+h1{
+    text-align: center; 
+    margin: 2.5em;
+    background-color: #5d3d7a;
+    color: #ffffff;
+    border: solid #5d3d7a ;
+    border-radius:3px ;
+    padding: 2px;
+    letter-spacing: 20px;
+
+}
+nav{
+    background-color: #5d3d7a;
+    border: solid #5d3d7a;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px;
+}
+p{
+    color: #ffffff;
+    background-color: #5d3d7a;
+    padding: 1em ;
+    border: solid #5d3d7a;
+    border-radius: 10px;
+}
