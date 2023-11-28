@@ -1,5 +1,7 @@
 body{
     background-image: linear-gradient(to bottom, #212b61, #313068, #40346e, #4f3974, #5d3d7a);
+    margin: 1em;
+    padding: 1.5em;
 }
 header > img{
     border-radius: 50%;
@@ -74,4 +76,19 @@ img + article p{
 }
 article + img{
     width: 450px;
+}
+
+
+figure > img{
+    height: 100px;
+}
+
+#casting{
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    margin: auto;
+    padding: 1em;
 }
