@@ -2,6 +2,7 @@ body{
     background-image: linear-gradient(to bottom, #212b61, #313068, #40346e, #4f3974, #5d3d7a);
     margin: 1em;
     padding: 1.5em;
+    font-family: Inter, Roboto, sans-serif;
 }
 header > img{
     border-radius: 50%;
@@ -87,8 +88,27 @@ figure > img{
     display: flex;
     flex-direction: row;
 }
+#Critique{
+    background-color:#5D3D7A ;
+    border-radius: 20px;
+    width: 25em;
+    text-align: center;
+}
+
 
 main{
     margin: auto;
     padding: 1em;
+}
+
+#info_gen > img{
+    height: 300px;
+}
+#info_gen > p{
+    background-color: #8f2323;
+    width: 3em;
+    height: 1px;
+    border-radius: 50px;
+    text-align: center;
+
 }
