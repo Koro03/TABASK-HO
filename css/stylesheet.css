@@ -1,5 +1,8 @@
 body{
     background-image: linear-gradient(to bottom, #212b61, #313068, #40346e, #4f3974, #5d3d7a);
+    margin: 1em;
+    padding: 1.5em;
+    font-family: Inter, Roboto, sans-serif;
 }
 header section{
     display: inline-flex;
@@ -81,11 +84,86 @@ article p + img{
     height: 20%;
     float: right;
 }
+
+
+figure > img{
+    height: 100px;
+}
+
+#casting{
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    margin: auto;
+    padding: 1em;
+}
+#section1{
+    background-color: #5d3d7a;
+    margin: auto;
+}
+
+#info_gen > img{
+    height: 300px;
+}
+#info_gen > p{
+    background-color: #8f2323;
+    width: 3em;
+    height: 1px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Bande-annonce{
+    background-color:#2F3D8A ;
+    width: 50em;
+    height: 30em;
+    margin: auto;
+}
+#Critique{
+    background-color:#5D3D7A ;
+    border-radius: 20px;
+    width: 25em;
+    text-align: center;
+    margin: auto;
+}
+
+#photo_saison{
+    background-color: #5d3d7a;
+    flex-basis: 10em;
+    margin: auto;
+}
+
+#episode{
+    background-color: #2F3D8A;
+    width: 30em;
+    margin: auto;
+}
+
+#section2 > p{
+    background-color: #CF4307;
+}
 .presentation{
     display: inline-flex;
     align-items: center;
 }
 .presentation p{
-    margin: 20px;
+
+    display: flex;
+    padding: 10px;
+    margin-right: 40px;
+    
 }
+
+footer figure img{
+    width: 32px;
+    height: 32px;
+}
+
 
