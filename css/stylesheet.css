@@ -159,10 +159,27 @@ main{
     padding: 10px;
     margin-right: 40px;
 }
-
+footer{
+    display: inline-flex;
+    align-items: center;
+}
+footer figure{
+    display: inline-flex;
+    width: 17em;
+}
 footer figure img{
     width: 32px;
     height: 32px;
+}
+footer figcaption{
+    margin-right:2em;
+    margin-left: 2em ;
+    color: #fff;
+}
+footer figure + img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
 
