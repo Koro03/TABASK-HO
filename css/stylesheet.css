@@ -4,7 +4,7 @@ body{
     padding: 1.5em;
     font-family: Inter, Roboto, sans-serif;
 }
-header section{
+header div{
     display: inline-flex;
     align-items: center;
 }
@@ -28,16 +28,15 @@ h1{
 
 }
 nav{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     background-color: #5d3d7a;
     border: solid #5d3d7a;
     border-radius: 10px;
     margin: 15px;
+    width: 100%;
 }
 nav a{
-    display: inline;
-    flex-direction: row;
     color: #fff;
     background-color: #CF4307;
     border: solid #5d3d7a;
@@ -46,9 +45,12 @@ nav a{
     margin: 15px;
 }
 nav img{
-    display: block;
     margin: 15px; 
     margin: 15px;
+}
+nav div {
+    margin-right: auto;
+    margin-left: auto;
 }
 p{
     color: #ffffff;
@@ -126,14 +128,12 @@ main{
 }
 
 #section2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: block;
 }
 #bande-annonce{
     background-color:#2F3D8A ;
     
-    flex-basis: 50em;
+    flex-basis: 40em;
     margin: auto;
 }
 #critique{
@@ -146,7 +146,17 @@ main{
 
 .casting{
     display: inline-flex;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
 }
+.casting img{
+    width: 10em;
+    height: 5em;
+    padding: 2em;
+    border-radius: 50%;
+}
+
 
 .casting > figure > img{
     border-radius: 50%;
@@ -157,18 +167,22 @@ main{
 }
 
 #photo_saison{
+    float: left;
     background-color: #5d3d7a;
-    flex-basis: 10em;
-    margin: auto;
+    margin: 2em;
+    width: 30%;
+    height: 30%;
 }
 
 #episode{
     background-color: #2F3D8A;
-    width: 30em;
+    width: 40em;
+    float: left;
 }
 #episode > div{
     display: flex;
     flex-direction: row;
+    
 }
 #episode > p{
     background-color: #CF4307;
