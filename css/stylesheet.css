@@ -132,16 +132,20 @@ main{
 }
 #bande-annonce{
     background-color:#2F3D8A ;
-    
-    flex-basis: 40em;
-    margin: auto;
+    flex-basis: 20em;
+    margin: 2em;
+    padding: 5px;
+    width: fit-content;
 }
+
+
 #critique{
     background-color:#5D3D7A ;
     border-radius: 20px;
     width: 25em;
     text-align: center;
-    margin: auto;
+    margin-right: 2em;
+    margin-top: 2px;
 }
 
 .casting{
@@ -164,20 +168,30 @@ main{
 
 #critique > p{
     background-color: #5d3d7a;
+    padding: 2em;
+}
+.critiqueDiv{
+    display: flex;
+    padding: 20em;
 }
 
 #photo_saison{
     float: left;
     background-color: #5d3d7a;
-    margin: 2em;
-    width: 30%;
-    height: 30%;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+#photo_saison > img{
+    height: 400px;
+    width: 400px;
 }
 
 #episode{
     background-color: #2F3D8A;
     width: 40em;
-    float: left;
+    float: right;
 }
 #episode > div{
     display: flex;
