@@ -112,12 +112,18 @@ main{
 }
 
 .mot-cle{
-    background-color: #8f2328;
-    width: 3em;
-    height: 5px;
+    display: inline-flex;
+    padding: 5px;
+    margin: 2em;
     border-radius: 30px;
 }
-
+.mot-cle p{
+    background-color: #8f2328;
+    padding: 5px;
+    margin: 10px;
+    border:solid 2px #8f2328;
+    
+}
 
 #info_gen > img{
     height: 300px;
@@ -135,7 +141,7 @@ main{
 #bande-annonce{
     background-color:#2F3D8A ;
     
-    flex-basis: 40em;
+    flex-basis: 50em;
     margin: auto;
 }
 #critique{
@@ -148,15 +154,18 @@ main{
 
 .casting{
     display: inline-flex;
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
+    width: fit-content;
+    background-color: #5d3d7a;
+    margin-right:50% ;
+    margin-left:12% ;
+    margin-top: 5em;
 }
 .casting img{
-    width: 10em;
-    height: 5em;
+    width: fit-content;
+    height: 15em;
     padding: 2em;
     border-radius: 50%;
+   
 }
 
 
@@ -176,7 +185,7 @@ main{
 
 #episode{
     background-color: #2F3D8A;
-    width: 40em;
+    width: 30em;
 }
 #episode > div{
     display: flex;
