@@ -4,7 +4,7 @@ body{
     padding: 1.5em;
     font-family: Inter, Roboto, sans-serif;
 }
-header section{
+header div{
     display: inline-flex;
     align-items: center;
 }
@@ -48,7 +48,7 @@ nav img{
     margin: 15px; 
     margin: 15px;
 }
-nav section {
+nav div {
     margin-right: auto;
     margin-left: auto;
 }
