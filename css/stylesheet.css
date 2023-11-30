@@ -148,7 +148,17 @@ main{
 
 .casting{
     display: inline-flex;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
 }
+.casting img{
+    width: 10em;
+    height: 5em;
+    padding: 2em;
+    border-radius: 50%;
+}
+
 
 .casting > figure > img{
     border-radius: 50%;
@@ -171,6 +181,7 @@ main{
 #episode > div{
     display: flex;
     flex-direction: row;
+    
 }
 #episode > p{
     background-color: #CF4307;
