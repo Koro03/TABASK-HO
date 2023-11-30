@@ -113,6 +113,7 @@ main{
 
 .mot-cle{
     display: inline-flex;
+    
     padding: 5px;
     margin: 2em;
     border-radius: 30px;
@@ -122,6 +123,8 @@ main{
     padding: 5px;
     margin: 10px;
     border:solid 2px #8f2328;
+    width: fit-content;
+    height: fit-content;
     
 }
 
@@ -134,7 +137,7 @@ main{
 }
 
 #section2{
-    display: block;
+    display: inline-flex;
 }
 #bande-annonce{
     background-color:#2F3D8A ;
@@ -160,23 +163,25 @@ main{
     float: left;
     width: 50em;
 }
+.Colonne2{
+    flex-direction: column;
+}
 
 .casting{
     display: inline-flex;
     width: fit-content;
     background-color: #5d3d7a;
     margin-right:50% ;
-    margin-left:12% ;
-    margin-top: 5em;
+    margin-left:2em ;
+    margin-top: 2em;
 }
 .casting img{
     width: fit-content;
-    height: 15em;
+    height: 5em;
     padding: 2em;
     border-radius: 50%;
    
 }
-
 
 .casting > figure > img{
     border-radius: 50%;
@@ -188,7 +193,12 @@ main{
 }
 .critiqueDiv{
     display: flex;
-    padding: 20em;
+    flex-direction: column;
+    padding: 2em;
+}
+.Colonne1{
+    display: flex;
+    flex-direction: column;
 }
 
 #photo_saison{
@@ -219,8 +229,9 @@ main{
 }
 
 #backstage{
-    flex-basis: 2em;
+    display: block;
     height: 2em;
+    
 }
 
 #section2 > p{
