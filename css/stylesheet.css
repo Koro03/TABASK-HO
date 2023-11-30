@@ -147,7 +147,11 @@ main{
 }
 
 .casting{
-    border-radius: 30px;
+    display: inline-flex;
+}
+
+.casting > figure > img{
+    border-radius: 50%;
 }
 
 #critique > p{
