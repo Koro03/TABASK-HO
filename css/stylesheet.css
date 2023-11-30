@@ -140,9 +140,10 @@ main{
 }
 #bande-annonce{
     background-color:#2F3D8A ;
+    width: fit-content;
+    margin: 2em;
+    padding: 2em;
     
-    flex-basis: 50em;
-    margin: auto;
 }
 #critique{
     background-color:#5D3D7A ;
@@ -150,6 +151,13 @@ main{
     width: 25em;
     text-align: center;
     margin: auto;
+}
+.colonne1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: -2;
+    float: left;
+    width: 50em;
 }
 
 .casting{
@@ -202,9 +210,6 @@ main{
     flex-basis: 2em;
     height: 2em;
 }
-
-
-
 
 #section2 > p{
     background-color: #CF4307;
