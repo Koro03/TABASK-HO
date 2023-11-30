@@ -7,6 +7,7 @@ body{
 header div{
     display: inline-flex;
     align-items: center;
+    
 }
 header div img{
     border-radius: 50%;
