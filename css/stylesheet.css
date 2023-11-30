@@ -74,11 +74,14 @@ article a:hover{
     padding: 5px;
     
 }
+
+/*
 article + article p{
     width: fit-content;
     padding: 5px;
     background-color: #8F2323;
 }
+*/
 article p + img{
     width: 450px;
     height: 20%;
@@ -98,21 +101,27 @@ figure > img{
 main{
     margin: auto;
     padding: 1em;
+    color: #ffffff;
 }
 #section1{
     background-color: #5d3d7a;
     margin: auto;
+    padding: 2em;
+}
+
+.mot-cle{
+    background-color: #8f2328;
+    width: 3em;
+    height: 5px;
+    border-radius: 30px;
 }
 
 #info_gen > img{
     height: 300px;
 }
-#info_gen > p{
-    background-color: #8f2323;
-    width: 3em;
-    height: 1px;
-    border-radius: 50px;
-    text-align: center;
+
+#résumé{
+    background-color: #5d3d7a;
 }
 
 #section2{
@@ -120,18 +129,26 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
 }
-#Bande-annonce{
+#bande-annonce{
     background-color:#2F3D8A ;
-    width: 50em;
-    height: 30em;
+    
+    flex-basis: 50em;
     margin: auto;
 }
-#Critique{
+#critique{
     background-color:#5D3D7A ;
     border-radius: 20px;
     width: 25em;
     text-align: center;
     margin: auto;
+}
+
+#casting{
+    border-radius: 30px;
+}
+
+#critique > p{
+    background-color: #5d3d7a;
 }
 
 #photo_saison{
@@ -143,8 +160,25 @@ main{
 #episode{
     background-color: #2F3D8A;
     width: 30em;
-    margin: auto;
 }
+#episode > div{
+    display: flex;
+    flex-direction: row;
+}
+#episode > p{
+    background-color: #CF4307;
+    width: 4em;
+    border-radius: 40px;
+}
+
+#backstage{
+    flex-basis: 2em;
+    height: 2em;
+
+}
+
+
+
 
 #section2 > p{
     background-color: #CF4307;
@@ -159,10 +193,27 @@ main{
     padding: 10px;
     margin-right: 40px;
 }
-
+footer{
+    display: inline-flex;
+    align-items: center;
+}
+footer figure{
+    display: inline-flex;
+    width: 17em;
+}
 footer figure img{
     width: 32px;
     height: 32px;
+}
+footer figcaption{
+    margin-right:2em;
+    margin-left: 2em ;
+    color: #fff;
+}
+footer figure + img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
 
