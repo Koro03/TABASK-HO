@@ -190,8 +190,6 @@ main{
 
 #episode{
     background-color: #2F3D8A;
-    width: 40em;
-    float: right;
 }
 #episode > div{
     display: flex;
