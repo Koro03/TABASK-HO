@@ -28,16 +28,15 @@ h1{
 
 }
 nav{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     background-color: #5d3d7a;
     border: solid #5d3d7a;
     border-radius: 10px;
     margin: 15px;
+    width: 100%;
 }
 nav a{
-    display: inline;
-    flex-direction: row;
     color: #fff;
     background-color: #CF4307;
     border: solid #5d3d7a;
@@ -46,9 +45,12 @@ nav a{
     margin: 15px;
 }
 nav img{
-    display: block;
     margin: 15px; 
     margin: 15px;
+}
+nav section {
+    margin-right: auto;
+    margin-left: auto;
 }
 p{
     color: #ffffff;
