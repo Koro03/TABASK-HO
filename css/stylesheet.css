@@ -8,7 +8,7 @@ header section{
     display: inline-flex;
     align-items: center;
 }
-header section img{
+header div img{
     border-radius: 50%;
     width: 64px;
     height: 64px;
@@ -115,6 +115,7 @@ main{
     height: 5px;
     border-radius: 30px;
 }
+
 
 #info_gen > img{
     height: 300px;
