@@ -135,7 +135,7 @@ main{
 #bande-annonce{
     background-color:#2F3D8A ;
     
-    flex-basis: 50em;
+    flex-basis: 40em;
     margin: auto;
 }
 #critique{
@@ -166,11 +166,12 @@ main{
 
 #episode{
     background-color: #2F3D8A;
-    width: 30em;
+    width: 40em;
 }
 #episode > div{
     display: flex;
     flex-direction: row;
+    
 }
 #episode > p{
     background-color: #CF4307;
