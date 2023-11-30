@@ -143,7 +143,7 @@ main{
     margin: auto;
 }
 
-#casting{
+.casting{
     border-radius: 30px;
 }
 
@@ -174,7 +174,6 @@ main{
 #backstage{
     flex-basis: 2em;
     height: 2em;
-
 }
 
 
