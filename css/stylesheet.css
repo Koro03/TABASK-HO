@@ -271,4 +271,24 @@ footer figure + img{
     border-radius: 50%;
 }
 
+.reward{
+    background-color: #2F3D8A;
+    padding: 1em;
+    margin:1em;
+    border: solid #2F3D8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+.reward figure{
+    display: inline-flex;
+    align-items: center;
+}
+
+@media screen {
+    /**/
+}
+
 
