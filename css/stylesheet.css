@@ -286,6 +286,17 @@ footer figure + img{
     display: inline-flex;
     align-items: center;
 }
+input{
+    display: none;
+    position: relative;
+    top: 15px;
+    width: 10em;
+    height: 2em;
+}
+.loupe:hover + input{
+    display: inline-block;
+}
+
 
 @media screen {
     /**/
