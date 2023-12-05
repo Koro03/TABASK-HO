@@ -114,6 +114,9 @@ main{
     padding: 1em;
     color: #ffffff;
 }
+
+/*haut de page detaillé*/
+
 #section1{
     background-color: #5d3d7a;
     margin: auto;
@@ -137,6 +140,11 @@ main{
     
 }
 
+#info-gen{
+    display: flex;
+    flex-direction: column;
+}
+
 #info_gen > img{
     height: 300px;
 }
@@ -144,56 +152,6 @@ main{
 #résumé{
     background-color: #5d3d7a;
 }
-
-
-
-/* debut du main principal page detaillé*/
-
-
-#section2{
-    display: inline-flex;
-}
-
-/*colonne 1 = bande annonce et photo saisons*/
-
-#colonne1{
-    width: 30em;
-}
-
-.Colonne1{
-    display: flex;
-    flex-direction: column;
-    flex-grow: -2;
-    float: left;
-    width: em;
-}
-
-#bande-annonce{
-    background-color:#2F3D8A ;
-    flex-basis: 20em;
-    margin: 2em;
-    padding: 5px;
-    width: fit-content;
-}
-
-
-#photo_saison{
-    float: left;
-    background-color: #5d3d7a;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
-}
-
-#photo_saison > img{
-    height: 400px;
-    width: 400px;
-}
-
-
-
-
-
 
 .casting{
     display: inline-flex;
@@ -215,6 +173,53 @@ main{
     border-radius: 50%;
 }
 
+
+/* debut du main principal page detaillé*/
+
+
+#section2{
+    display: inline-flex;
+}
+
+/*colonne 1 = bande annonce et photo saisons*/
+
+#colonne1{
+    width: 30em;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+.Colonne1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: -2;
+    width:30em;
+    margin-bottom: 5em;
+
+}
+
+#bande-annonce{
+    background-color:#2F3D8A ;
+    padding: 5px;
+    width: 30em;
+}
+
+
+#photo_saison{
+    float: left;
+    background-color: #5d3d7a;
+    margin: auto;
+    width: 30em;
+    height: fit-content;
+}
+
+#photo_saison > img{
+    height: 350px;
+    width: 400px;
+}
+
+
+/*colonne2 = critique et episodes*/
 
 .critiqueDiv{
     display: flex;
@@ -247,6 +252,13 @@ main{
     width: 4em;
     border-radius: 40px;
 }
+
+
+
+
+
+
+/* page backstage*/ 
 
 #backstage{
     display: block;
