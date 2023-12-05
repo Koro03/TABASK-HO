@@ -333,7 +333,13 @@ input{
 .loupe:hover + input{
     display: inline-block;
 }
-
+.poster img{
+    height: 330;
+    width: 414;
+}
+.poster{
+    font-size: larger;
+}
 
 @media screen {
     /**/
