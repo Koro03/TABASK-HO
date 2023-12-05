@@ -101,7 +101,7 @@ article p + img{
 
 
 figure > img{
-    height: 100px;
+    height: 50px;
 }
 
 #casting{
@@ -282,10 +282,14 @@ main{
 footer{
     display: inline-flex;
     align-items: center;
+    width: 100%;
+    
 }
 footer figure{
     display: inline-flex;
     width: 17em;
+    margin-top: 2em ;
+    margin-left: auto;
 }
 footer figure img{
     width: 32px;
@@ -300,6 +304,7 @@ footer figure + img{
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    margin-left: auto;
 }
 
 .reward{
