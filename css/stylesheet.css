@@ -201,7 +201,8 @@ main{
 #bande-annonce{
     background-color:#2F3D8A ;
     padding: 5px;
-    width: 30em;
+    width: 35em;
+    height: 30em;
 }
 
 
@@ -209,13 +210,13 @@ main{
     float: left;
     background-color: #5d3d7a;
     margin: auto;
-    width: 30em;
-    height: fit-content;
+    width: 35em;
+    height: 30em;
 }
 
 #photo_saison > img{
-    height: 350px;
-    width: 400px;
+    height: 20em;
+    width: 30em;
 }
 
 
