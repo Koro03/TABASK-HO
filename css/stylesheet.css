@@ -7,6 +7,7 @@ body{
 header div{
     display: inline-flex;
     align-items: center;
+    
 }
 header div img{
     border-radius: 50%;
@@ -112,12 +113,21 @@ main{
 }
 
 .mot-cle{
-    background-color: #8f2328;
-    width: 3em;
-    height: 5px;
+    display: inline-flex;
+    
+    padding: 5px;
+    margin: 2em;
     border-radius: 30px;
 }
-
+.mot-cle p{
+    background-color: #8f2328;
+    padding: 5px;
+    margin: 10px;
+    border:solid 2px #8f2328;
+    width: fit-content;
+    height: fit-content;
+    
+}
 
 #info_gen > img{
     height: 300px;
@@ -128,35 +138,51 @@ main{
 }
 
 #section2{
-    display: block;
+    display: inline-flex;
 }
 #bande-annonce{
     background-color:#2F3D8A ;
-    
-    flex-basis: 40em;
-    margin: auto;
+    flex-basis: 20em;
+    margin: 2em;
+    padding: 5px;
+    width: fit-content;
 }
+
+
 #critique{
     background-color:#5D3D7A ;
     border-radius: 20px;
     width: 25em;
     text-align: center;
-    margin: auto;
+    margin-right: 2em;
+    margin-top: 2px;
+}
+.colonne1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: -2;
+    float: left;
+    width: 50em;
+}
+.Colonne2{
+    flex-direction: column;
 }
 
 .casting{
     display: inline-flex;
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
+    width: fit-content;
+    background-color: #5d3d7a;
+    margin-right:50% ;
+    margin-left:2em ;
+    margin-top: 2em;
 }
 .casting img{
-    width: 10em;
+    width: fit-content;
     height: 5em;
     padding: 2em;
     border-radius: 50%;
+   
 }
-
 
 .casting > figure > img{
     border-radius: 50%;
@@ -164,20 +190,33 @@ main{
 
 #critique > p{
     background-color: #5d3d7a;
+    padding: 2em;
+}
+.critiqueDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.Colonne1{
+    display: flex;
+    flex-direction: column;
 }
 
 #photo_saison{
     float: left;
     background-color: #5d3d7a;
-    margin: 2em;
-    width: 30%;
-    height: 30%;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+#photo_saison > img{
+    height: 400px;
+    width: 400px;
 }
 
 #episode{
     background-color: #2F3D8A;
-    width: 40em;
-    float: left;
 }
 #episode > div{
     display: flex;
@@ -191,12 +230,10 @@ main{
 }
 
 #backstage{
-    flex-basis: 2em;
+    display: block;
     height: 2em;
+    
 }
-
-
-
 
 #section2 > p{
     background-color: #CF4307;
@@ -232,6 +269,37 @@ footer figure + img{
     width: 32px;
     height: 32px;
     border-radius: 50%;
+}
+
+.reward{
+    background-color: #2F3D8A;
+    padding: 1em;
+    margin:1em;
+    border: solid #2F3D8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+.reward figure{
+    display: inline-flex;
+    align-items: center;
+}
+input{
+    display: none;
+    position: relative;
+    top: 15px;
+    width: 10em;
+    height: 2em;
+}
+.loupe:hover + input{
+    display: inline-block;
+}
+
+
+@media screen {
+    /**/
 }
 
 
