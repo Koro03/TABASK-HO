@@ -1,0 +1,3 @@
+lien liste presentation : https://codepen.io/oscar73110/pen/LYZvNBp
+
+carrousel (html et css mais faut me demander le bon css) : https://codepen.io/emilio-dominguez/pen/QWQwdbY
