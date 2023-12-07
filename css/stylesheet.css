@@ -111,7 +111,7 @@ main{
 
 #section1{
     background-color: #5d3d7a;
-    margin: auto;
+    margin: auto auto 3em auto;
     padding: 2em;
 }
 
@@ -195,6 +195,7 @@ main{
     padding: 5px;
     width: 35em;
     height: 25em;
+    margin-top: 2em;
 }
 
 video{
@@ -210,6 +211,7 @@ video{
     margin: auto;
     width: 35em;
     height: 30em;
+    padding: 2em;
 }
 
 #photo_saison > img{
@@ -231,6 +233,7 @@ video{
     background-color:#5D3D7A ;
     border-radius: 20px;
     width: 25em;
+    height: 20em;
     text-align: center;
     margin: 4em;
 }
@@ -240,20 +243,24 @@ video{
 #episode{
     background-color: #2F3D8A;
     padding: 2em;
+    height: 50em;
 }
-#episode > div{
+
+    
+
+.ep{
     display: flex;
     flex-direction: row;
-    
+    margin :15px;
+    align-items: center;
 }
-#episode > p{
-    background-color: #CF4307;
-    width: 4em;
-    border-radius: 40px;
+.ep > figcaption{
+    width: fit-content;
 }
 
-
-
+#backstage{
+    width: fit-content;
+}
 
 
 
