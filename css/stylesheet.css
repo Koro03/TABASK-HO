@@ -441,6 +441,7 @@ input{
 .dropdown {
     position: relative;
     display: inline-block;
+    list-style-type: none;
 }
 .dropdown-child {
     display: none;
@@ -448,10 +449,4 @@ input{
 }
 .dropdown:hover .dropdown-child {
     display: block;
-}
-ul {
-    list-style-type: none;
-}
-div p {
-    background-color: #111A4B;
 }
