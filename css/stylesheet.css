@@ -426,8 +426,6 @@ input{
 .mainmenubtn {
     border: none;
     cursor: pointer;
-    padding:20px;
-    margin-top:20px;
 }
 .dropdown {
     position: relative;
@@ -435,7 +433,6 @@ input{
 }
 .dropdown-child {
     display: none;
-    min-width: 200px;
     background-color: #2F3D8A;
 }
 .dropdown:hover .dropdown-child {
@@ -443,5 +440,12 @@ input{
 }
 li h3 {
     background-color: #111A4B;
+    padding: 10px 5px;
+    border-radius: 10px;
 }
-
+ul {
+    list-style-type: none;
+}
+div p {
+    background-color: #111A4B;
+}
