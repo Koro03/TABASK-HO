@@ -153,9 +153,9 @@ main{
     margin-left:2em ;
     margin-top: 2em;
 }
-.casting img{
-    width: fit-content;
-    height: 5em;
+.casting_img{
+    width: 9em;
+    height: 10em;
     padding: 2em;
     border-radius: 50%;
    
@@ -177,8 +177,8 @@ main{
 
 #colonne1{
     width: 30em;
-    margin-left: 7em;
-    margin-right: 7em;
+    margin-left: 2em;
+    margin-right: 5em;
 }
 
 .Colonne1{
@@ -194,7 +194,13 @@ main{
     background-color:#2F3D8A ;
     padding: 5px;
     width: 35em;
-    height: 30em;
+    height: 25em;
+}
+
+video{
+    align-self: center;
+    width: 30em;
+    height: 20em;
 }
 
 
@@ -226,14 +232,14 @@ main{
     border-radius: 20px;
     width: 25em;
     text-align: center;
-    margin-right: 2em;
-    margin-top: 2px;
+    margin: 4em;
 }
 
 
 
 #episode{
     background-color: #2F3D8A;
+    padding: 2em;
 }
 #episode > div{
     display: flex;
