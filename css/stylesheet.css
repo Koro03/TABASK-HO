@@ -113,6 +113,7 @@ main{
     background-color: #5d3d7a;
     margin: auto auto 3em auto;
     padding: 2em;
+    display: inline-block;
 }
 
 .mot-cle{
@@ -129,12 +130,18 @@ main{
     border:solid 2px #8f2328;
     width: fit-content;
     height: fit-content;
-    
 }
 
-#info-gen{
+#limite_age{
+    height: 1em;
+    width: 5em;
+}
+
+#info_gen{
     display: flex;
     flex-direction: column;
+    width: 13em;
+
 }
 
 #info_gen > img{
@@ -143,6 +150,7 @@ main{
 
 #résumé{
     background-color: #5d3d7a;
+    border: 2px solid black;
 }
 
 .casting{
