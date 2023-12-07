@@ -459,6 +459,8 @@ input{
 .dropdown-child {
     display: none;
     background-color: #2F3D8A;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .dropdown:hover .dropdown-child {
     display: block;
