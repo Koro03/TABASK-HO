@@ -113,11 +113,11 @@ main{
     background-color: #5d3d7a;
     margin: auto auto 3em auto;
     padding: 2em;
+    display: inline-flex;
 }
 
 .mot-cle{
     display: inline-flex;
-    
     padding: 5px;
     margin: 2em;
     border-radius: 30px;
@@ -129,20 +129,33 @@ main{
     border:solid 2px #8f2328;
     width: fit-content;
     height: fit-content;
-    
 }
 
-#info-gen{
+#limite_age{
+    height: 5em;
+    width: 5em;
+}
+
+#info_gen{
     display: flex;
     flex-direction: column;
+    width: 13em;
+
 }
 
-#info_gen > img{
+#poster{
     height: 300px;
 }
 
 #résumé{
     background-color: #5d3d7a;
+    border: 2px solid black;
+}
+
+#colonnedroite{
+    display: flex;
+    flex-direction: column;
+    margin: 4em 2em 4em 4em;
 }
 
 .casting{
@@ -192,7 +205,7 @@ main{
 
 #bande-annonce{
     background-color:#2F3D8A ;
-    padding: 5px;
+    padding: 20px;
     width: 35em;
     height: 25em;
     margin-top: 2em;
@@ -210,7 +223,7 @@ video{
     background-color: #5d3d7a;
     margin: auto;
     width: 35em;
-    height: 30em;
+    height: 27em;
     padding: 2em;
 }
 
@@ -235,7 +248,8 @@ video{
     width: 25em;
     height: 20em;
     text-align: center;
-    margin: 4em;
+    margin: 0.5em 3em 4.5em 3em;
+    padding: 1em;
 }
 
 
@@ -440,6 +454,7 @@ input{
 .dropdown {
     position: relative;
     display: inline-block;
+    list-style-type: none;
 }
 .dropdown-child {
     display: none;
@@ -448,6 +463,6 @@ input{
 .dropdown:hover .dropdown-child {
     display: block;
 }
-ul {
-    list-style-type: none;
+.description{
+    background-color: #111A4B;
 }
