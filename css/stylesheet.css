@@ -436,9 +436,12 @@ input{
 .dropdown-child {
     display: none;
     min-width: 200px;
+    background-color: #2F3D8A;
 }
 .dropdown:hover .dropdown-child {
     display: block;
 }
-
+li h3 {
+    background-color: #111A4B;
+}
 
