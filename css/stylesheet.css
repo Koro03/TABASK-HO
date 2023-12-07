@@ -440,6 +440,7 @@ input{
 .dropdown {
     position: relative;
     display: inline-block;
+    list-style-type: none;
 }
 .dropdown-child {
     display: none;
@@ -447,7 +448,4 @@ input{
 }
 .dropdown:hover .dropdown-child {
     display: block;
-}
-ul {
-    list-style-type: none;
 }
