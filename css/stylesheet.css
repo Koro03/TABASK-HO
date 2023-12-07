@@ -429,7 +429,6 @@ input{
 }
 .dropdown-child {
     display: none;
-    background-color: skyblue;
     min-width: 200px;
 }
 .dropdown:hover .dropdown-child {
