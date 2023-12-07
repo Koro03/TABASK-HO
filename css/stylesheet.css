@@ -430,6 +430,29 @@ input{
 	letter-spacing: 0.5px;
 }
 
-
-
-
+.mainmenubtn {
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: #2F3D8A;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+li h3 {
+    background-color: #111A4B;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+ul {
+    list-style-type: none;
+}
+div p {
+    background-color: #111A4B;
+}
