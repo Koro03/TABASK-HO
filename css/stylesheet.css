@@ -149,16 +149,16 @@ main{
     display: inline-flex;
     width: fit-content;
     background-color: #5d3d7a;
-    margin-right:50% ;
-    margin-left:2em ;
+    margin-right:auto;
+    margin-left:auto;
     margin-top: 2em;
+    
 }
 .casting_img{
     width: 9em;
     height: 10em;
     padding: 2em;
-    border-radius: 50%;
-   
+    border-radius: 50%;  
 }
 
 .casting > figure > img{
