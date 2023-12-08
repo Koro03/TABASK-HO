@@ -1,14 +1,30 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Open Presentation_serie_ge.html",
+      "file": "c:\\Users\\benfa\\Documents\\Iut_1a\\R1.02_Dev_interface_web\\tabask-ho\\Presentation_serie_ge.html"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
         {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Open Presentation_serie_ge.html",
-            "file": "c:\\Users\\benfa\\Documents\\Iut_1a\\R1.02_Dev_interface_web\\tabask-ho\\Presentation_serie_ge.html"
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ]
+    }
+  ]
 }

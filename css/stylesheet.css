@@ -448,23 +448,69 @@ input{
     border: none;
     cursor: pointer;
     background-color: #111A4B;
-    padding: 10px 5px;
+    padding: 30px;
     border-radius: 10px;
+    margin: 20px;
+    text-align: center;
 }
 .dropdown {
     position: relative;
-    display: inline-block;
-    list-style-type: none;
 }
 .dropdown-child {
     display: none;
     background-color: #2F3D8A;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
 }
-.dropdown:hover .dropdown-child {
-    display: block;
+.dropdown:hover .dropdown-child, .mainsaison {
+    display: flex;
+}
+.mainsaison figure {
+    flex-basis: 30%;
+}
+.mainsaison ul {
+    flex-basis: 70%;
 }
 .description{
     background-color: #111A4B;
+}
+ul {
+    list-style-type: none;
+}
+.play{
+    position: absolute;
+    z-index: 2;
+    top: 160px;
+    left: 85px;
+    height: 52px;
+    max-width: 48px;
+}
+.screenshot {
+    height: 142px;
+    width: 142px;
+}
+.screenshot, .description {
+    margin: 5px;
+}
+.posterst {
+    height: 440px;
+    max-width: 330px;
+}
+.dropdown-child section {
+    font-size: small;
+}
+.reveal_episodes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.episodes {
+    display: none;
+}
+
+.mainmenubtn:active .episodes {
+    display: block;
 }
