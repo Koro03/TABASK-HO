@@ -364,6 +364,30 @@ input{
     /**/
 }
 
+.mainmenubtn {
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    min-width: 200px;
+    background-color: #2F3D8A;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+li h3 {
+    background-color: #111A4B;
+}
+
+
+/*Carousel*/
 *,
 *::before,
 *::after {
@@ -376,6 +400,10 @@ input{
 
 .slider-wrapper {
 	position: relative;
+	display: flex; /* Utilisation de flexbox pour centrer le contenu */
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Ajustement de la hauteur à 100% de la vue */
 }
 
 .slider {
