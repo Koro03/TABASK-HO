@@ -160,10 +160,10 @@ main{
 
 .casting{
     display: inline-flex;
-    width: fit-content;
+    width: 40em;
     background-color: #5d3d7a;
     margin-right:auto;
-    margin-left:auto;
+    margin-left: 7em;
     margin-top: 2em;
     
 }
