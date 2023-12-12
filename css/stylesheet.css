@@ -44,6 +44,8 @@ nav a{
     border-radius: 10px;
     padding : 5px;
     margin: 15px;
+    width: 7em;
+    text-align: center;
 }
 nav img{
     margin: 15px; 
@@ -120,7 +122,7 @@ main{
 .mot-cle{
     display: inline-flex;
     padding: 5px;
-    margin: 2em;
+    margin-top: 1em;
     border-radius: 30px;
 }
 .mot-cle p{
@@ -141,6 +143,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 13em;
+    margin: auto auto auto 5em;
 
 }
 
@@ -177,11 +180,13 @@ main{
     width: 9em;
     height: 10em;
     padding: 2em;
-    border-radius: 50%;  
+    border-radius: 50%;
+    margin-right: 2em;
+    border-radius: 50%; 
 }
 
-.casting > figure > img{
-    border-radius: 50%;
+.casting > figure{
+    height: 3em;
 }
 
 
@@ -190,6 +195,7 @@ main{
 
 #section2{
     display: inline-flex;
+    
 }
 
 /*colonne 1 = bande annonce et photo saisons*/
@@ -198,6 +204,7 @@ main{
     width: 30em;
     margin-left: 2em;
     margin-right: 5em;
+    
 }
 
 .Colonne1{
@@ -206,6 +213,7 @@ main{
     flex-grow: -2;
     width:30em;
     margin-bottom: 5em;
+    border-radius: 0px 20px 0px 20px;
 
 }
 
@@ -225,32 +233,34 @@ video{
 
 
 #photo_saison{
-    float: left;
     background-color: #5d3d7a;
-    margin: auto;
+    margin-top: 2em;
     width: 35em;
-    height: 27em;
-    padding: 2em;
+    height: 25em;
+    padding: 20px;
 }
 
 #photo_saison > img{
+    align-self: center;
     height: 20em;
     width: 30em;
+    margin-top: 2em;
 }
 
 
 /*colonne2 = critique et episodes*/
 
-.critiqueDiv{
+.Colonne2{
     display: flex;
     flex-direction: column;
     padding: 2em;
+    
 }
 
 
 #critique{
     background-color:#5D3D7A ;
-    border-radius: 20px;
+    border-radius: 0px 20px 0px 20px;
     width: 25em;
     height: 20em;
     text-align: center;
@@ -263,7 +273,9 @@ video{
 #episode{
     background-color: #2F3D8A;
     padding: 2em;
-    height: 50em;
+    height: 65em;
+    width: 50em;
+    border-radius: 0px 20px 0px 20px;
 }
 
     
@@ -277,11 +289,106 @@ video{
 .ep > figcaption{
     width: fit-content;
 }
+#episode > figure{
+    margin: 2em;
+}
 
 #backstage{
     width: fit-content;
 }
 
+
+/*Carousel*/
+.carroussel2{
+    background-color: #5d3d7a;
+    padding: 20px;
+    width: 35em;
+    height: 25em;
+    margin-top: 2em;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.slider-wrapper2 {
+	position: relative;
+	display: flex; /* Utilisation de flexbox pour centrer le contenu */
+	justify-content: center;
+	align-items: center;
+	height: 40vh; /* Ajustement de la hauteur à 100% de la vue */
+}
+
+.slider {
+	--slide-width: clamp(320px, 75vw, 800px);
+	--slide-height: clamp(240px, 75vh, 600px);
+
+	display: grid;
+	grid-auto-flow: column;
+	scroll-snap-type: x mandatory;
+	max-width: var(--slide-width);
+	border: 5px solid #fff;
+	box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+	overflow-y: hidden;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slide2 {
+	scroll-snap-align: start;
+	width: 470px;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 15px;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dots a {
+	--dots-size: 8px;
+
+	width: var(--dots-size);
+	height: var(--dots-size);
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+	cursor: pointer;
+}
+
+.dots a:hover {
+	opacity: 1;
+}
+
+.caption {
+	display: block;
+	margin-top: 25px;
+	color: #999;
+	letter-spacing: 0.5px;
+}
 
 
 /* page backstage*/ 
@@ -547,4 +654,12 @@ ul {
 
 .mainmenubtn:active .episodes {
     display: block;
+}
+
+
+
+/*Media query*/
+
+@media screen {
+    
 }
