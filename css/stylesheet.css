@@ -96,6 +96,7 @@ figure > img{
 #casting{
     display: flex;
     flex-direction: row;
+    border-radius: 30px;
 }
 
 main{
@@ -143,9 +144,7 @@ main{
     margin: auto;
 }
 
-#casting{
-    border-radius: 30px;
-}
+
 
 #critique > p{
     background-color: #5d3d7a;
