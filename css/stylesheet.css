@@ -499,92 +499,131 @@ li h3 {
     background-color: #111A4B;
 }
 
-
 /*Carousel*/
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .slider-wrapper {
-	position: relative;
-	display: flex; /* Utilisation de flexbox pour centrer le contenu */
-	justify-content: center;
-	align-items: center;
-	height: 100vh; /* Ajustement de la hauteur à 100% de la vue */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
 .slider {
-	--slide-width: clamp(320px, 75vw, 800px);
-	--slide-height: clamp(240px, 75vh, 600px);
+    --slide-width: clamp(250px, 60vw, 640px);
+    --slide-height: clamp(200px, 60vh, 480px);
 
-	display: grid;
-	grid-auto-flow: column;
-	scroll-snap-type: x mandatory;
-	max-width: var(--slide-width);
-	border: 5px solid #fff;
-	box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
-	overflow-y: hidden;
-	overflow-x: auto;
-	scroll-behavior: smooth;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-snap-type: x mandatory;
+    max-width: var(--slide-width);
+    border: 4px solid #fff;
+    box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 .slide {
-	scroll-snap-align: start;
-	width: var(--slide-width);
-	height: var(--slide-height);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+    scroll-snap-align: start;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    background: center / cover no-repeat;
 }
 
 .dots {
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-	gap: 15px;
-	z-index: 1;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dots a {
-	--dots-size: 8px;
+    --dots-size: 6px;
 
-	width: var(--dots-size);
-	height: var(--dots-size);
-	border-radius: 50%;
-	background-color: #fff;
-	opacity: 0.75;
-	transition: opacity ease 250ms;
-	cursor: pointer;
+    width: var(--dots-size);
+    height: var(--dots-size);
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 200ms;
+    cursor: pointer;
 }
 
 .dots a:hover {
-	opacity: 1;
+    opacity: 1;
+}
+/*fin carousel*/
+
+/*Texte voir plus*/
+  
+  .container {
+    position : relative;
+    
+    width: 300px;
+    min-height: calc(3rem + 20px);
+    height: calc(3rem + 20px);
+  
+    line-height: 1.1rem;
+    
+    border-radius : 6px;
+    
+    padding : 10px;
+  }
+  
+  .container.opened {
+    height : fit-content;
+  }
+  
+  .container > p {
+    margin : 0;
+    
+    height : 100%;
+    
+    overflow: hidden;
+  }
+  
+  .container::before {
+    content: "Voir plus";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding-left: 50px;
+    background: linear-gradient(90deg, rgba(93, 61, 122, 0), rgba(93, 61, 122, 0.6) 50px);
+    color: #FFFFFF; /* Texte en blanc */
 }
 
-.caption {
-	display: block;
-	margin-top: 25px;
-	color: #999;
-	letter-spacing: 0.5px;
+  
+.container.opened::before {
+    content : "Voir moins";
 }
-
+/*fin texte voir plus*/
+/*texte voir plus plus casting et scène de baiser*/
+.midmain{
+    display: inline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
 .mainmenubtn {
     border: none;
     cursor: pointer;
