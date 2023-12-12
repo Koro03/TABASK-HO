@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABAS'KHO</title>
+    <link rel="website icon" type="images/png" href="images/TABAS'KHO_logo_orange.png">
     <link rel="website icon" type="png" href="images/logoplay.png">
-    <!--<link rel="stylesheet" href="css/stylesheet.css">-->
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
     <header>
-        <img src="images/logo_tabasko.png" alt="logo_tabasko" title="logo_tabasko">
-        <h1>TABASk'HO</h1>
+        <div>
+            <img src="images/logoPlay_BV.jpg" alt="logo_tabasko" title="logo_tabasko">
+            <h1>TABAS'KHO</h1>
+        </div>
+        <hr>
         <nav>
             <img src="images/menu-burger.png" alt="menu-burger" title="menu-burger">
-            <a href="">accueil</a>
-            <a href="">serie</a>
-            <a href="">Film</a>
-            
-            <img src="images/chercher.png" alt="rechercher video">
-            <img src="images/maison (1).png" alt="accueil">
+            <div>
+                <a href="Presentation_serie_ge.html">accueil</a>
+                <a href="">serie</a>
+                <a href="">Film</a>
+            </div>
+            <img src="images/chercher.png" alt="bar-rechercher" title="barre-rechercher">
+            <img src="images/maisonblanche.png" alt="accueil" title="accueil">
         </nav>
     </header>
     <main>
-        <article>
+        <article class="carrousel">
             <h1><strong>BACKSTAGE</strong></h1>
-            <figure>
-                <img src="images/backstage/bloopers1.jpg" alt="betisier_saison_1" title="bloopers1">
-            </figure>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div id="slide-1" class="slide" style="background-image: url('images/backstage/bloopers1.png');"></div>
+            
+                    <div id="slide-2" class="slide" style="background-image: url('images/backstage/bloopers2.png');"></div>
+            
+                    <div id="slide-3" class="slide" style="background-image: url('images/backstage/bloopers3.png');"></div>
+
+                    <div id="slide-4" class="slide" style="background-image: url('images/backstage/bloopers4.png');"></div>
+                </div>
+                <div class="dots">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                </div>
+            </div>
+                
         </article>
         <section>
             <div>
@@ -71,19 +91,20 @@
         </article>
     </main>
     <footer>
-        <hr>
+        
         <figure>
             <img src="images/appel-telephonique.png" alt="Nous contactez" title="Nous contactez">
-            <figcaption></figcaption>
+            <figcaption>Appellez-nous</figcaption>
         </figure>
         <figure>
             <img src="images/marqueur.png" alt="adresse" title="adresse">
-            <figcaption></figcaption>
+            <figcaption>adresse de l'entreprise</figcaption>
         </figure>
         <figure>
             <img src="images/enveloppe.png" alt="mail" title="mail">
-            <figcaption></figcaption>
+            <figcaption>Mail</figcaption>
         </figure>
+        <img src="images/logoPlay_BV.jpg" alt="">
     </footer>
 </body>
 </html>

@@ -4,11 +4,12 @@ body{
     padding: 1.5em;
     font-family: Inter, Roboto, sans-serif;
 }
-header section{
+header div{
     display: inline-flex;
     align-items: center;
+    
 }
-header section img{
+header div img{
     border-radius: 50%;
     width: 64px;
     height: 64px;
@@ -28,16 +29,15 @@ h1{
 
 }
 nav{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     background-color: #5d3d7a;
     border: solid #5d3d7a;
     border-radius: 10px;
     margin: 15px;
+    width: 100%;
 }
 nav a{
-    display: inline;
-    flex-direction: row;
     color: #fff;
     background-color: #CF4307;
     border: solid #5d3d7a;
@@ -46,9 +46,12 @@ nav a{
     margin: 15px;
 }
 nav img{
-    display: block;
     margin: 15px; 
     margin: 15px;
+}
+nav div {
+    margin-right: auto;
+    margin-left: auto;
 }
 p{
     color: #ffffff;
@@ -90,7 +93,7 @@ article p + img{
 
 
 figure > img{
-    height: 100px;
+    height: 50px;
 }
 
 #casting{
@@ -104,80 +107,190 @@ main{
     padding: 1em;
     color: #ffffff;
 }
+
+/*haut de page detaillé*/
+
 #section1{
     background-color: #5d3d7a;
-    margin: auto;
+    margin: auto auto 3em auto;
     padding: 2em;
+    display: inline-flex;
 }
 
 .mot-cle{
-    background-color: #8f2328;
-    width: 3em;
-    height: 5px;
+    display: inline-flex;
+    padding: 5px;
+    margin: 2em;
     border-radius: 30px;
 }
+.mot-cle p{
+    background-color: #8f2328;
+    padding: 5px;
+    margin: 10px;
+    border:solid 2px #8f2328;
+    width: fit-content;
+    height: fit-content;
+}
 
-#info_gen > img{
+#limite_age{
+    height: 5em;
+    width: 5em;
+}
+
+#info_gen{
+    display: flex;
+    flex-direction: column;
+    width: 13em;
+
+}
+
+#info_gen > h2{
+
+    text-align: center;
+}
+
+#poster{
     height: 300px;
 }
 
 #résumé{
     background-color: #5d3d7a;
+    border: 2px solid black;
 }
 
-#section2{
+#colonnedroite{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 4em 2em 4em 4em;
 }
+
+.casting{
+    display: inline-flex;
+    width: 40em;
+    background-color: #5d3d7a;
+    margin-right:auto;
+    margin-left: 7em;
+    margin-top: 2em;
+    
+}
+.casting_img{
+    width: 9em;
+    height: 10em;
+    padding: 2em;
+    border-radius: 50%;  
+}
+
+.casting > figure > img{
+    border-radius: 50%;
+}
+
+
+/* debut du main principal page detaillé*/
+
+
+#section2{
+    display: inline-flex;
+}
+
+/*colonne 1 = bande annonce et photo saisons*/
+
+#colonne1{
+    width: 30em;
+    margin-left: 2em;
+    margin-right: 5em;
+}
+
+.Colonne1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: -2;
+    width:30em;
+    margin-bottom: 5em;
+
+}
+
 #bande-annonce{
     background-color:#2F3D8A ;
-    
-    flex-basis: 50em;
-    margin: auto;
+    padding: 20px;
+    width: 35em;
+    height: 25em;
+    margin-top: 2em;
 }
+
+video{
+    align-self: center;
+    width: 30em;
+    height: 20em;
+}
+
+
+#photo_saison{
+    float: left;
+    background-color: #5d3d7a;
+    margin: auto;
+    width: 35em;
+    height: 27em;
+    padding: 2em;
+}
+
+#photo_saison > img{
+    height: 20em;
+    width: 30em;
+}
+
+
+/*colonne2 = critique et episodes*/
+
+.critiqueDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+
 #critique{
     background-color:#5D3D7A ;
     border-radius: 20px;
     width: 25em;
+    height: 20em;
     text-align: center;
-    margin: auto;
+    margin: 0.5em 3em 4.5em 3em;
+    padding: 1em;
 }
 
 
-
-#critique > p{
-    background-color: #5d3d7a;
-}
-
-#photo_saison{
-    background-color: #5d3d7a;
-    flex-basis: 10em;
-    margin: auto;
-}
 
 #episode{
     background-color: #2F3D8A;
-    width: 30em;
+    padding: 2em;
+    height: 50em;
 }
-#episode > div{
+
+    
+
+.ep{
     display: flex;
     flex-direction: row;
+    margin :15px;
+    align-items: center;
 }
-#episode > p{
-    background-color: #CF4307;
-    width: 4em;
-    border-radius: 40px;
+.ep > figcaption{
+    width: fit-content;
 }
 
 #backstage{
-    flex-basis: 2em;
-    height: 2em;
-    margin: auto;
+    width: fit-content;
 }
 
 
 
+/* page backstage*/ 
+
+#backstage{
+    display: block;
+    height: 2em;
+    
+}
 
 #section2 > p{
     background-color: #CF4307;
@@ -195,10 +308,14 @@ main{
 footer{
     display: inline-flex;
     align-items: center;
+    width: 100%;
+    
 }
 footer figure{
     display: inline-flex;
     width: 17em;
+    margin-top: 2em ;
+    margin-left: auto;
 }
 footer figure img{
     width: 32px;
@@ -213,6 +330,221 @@ footer figure + img{
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    margin-left: auto;
+}
+
+.reward{
+    background-color: #2F3D8A;
+    padding: 1em;
+    margin:1em;
+    border: solid #2F3D8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+.reward figure{
+    display: inline-flex;
+    align-items: center;
+}
+input{
+    display: none;
+    position: relative;
+    top: 15px;
+    width: 10em;
+    height: 2em;
+}
+.loupe:hover + input{
+    display: inline-block;
+}
+.poster img{
+    height: 330;
+    width: 414;
+}
+.poster{
+    font-size: larger;
+}
+
+@media screen {
+    /**/
+}
+
+.mainmenubtn {
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    min-width: 200px;
+    background-color: #2F3D8A;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+li h3 {
+    background-color: #111A4B;
 }
 
 
+/*Carousel*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.slider-wrapper {
+	position: relative;
+	display: flex; /* Utilisation de flexbox pour centrer le contenu */
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Ajustement de la hauteur à 100% de la vue */
+}
+
+.slider {
+	--slide-width: clamp(320px, 75vw, 800px);
+	--slide-height: clamp(240px, 75vh, 600px);
+
+	display: grid;
+	grid-auto-flow: column;
+	scroll-snap-type: x mandatory;
+	max-width: var(--slide-width);
+	border: 5px solid #fff;
+	box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+	overflow-y: hidden;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slide {
+	scroll-snap-align: start;
+	width: var(--slide-width);
+	height: var(--slide-height);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 15px;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dots a {
+	--dots-size: 8px;
+
+	width: var(--dots-size);
+	height: var(--dots-size);
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+	cursor: pointer;
+}
+
+.dots a:hover {
+	opacity: 1;
+}
+
+.caption {
+	display: block;
+	margin-top: 25px;
+	color: #999;
+	letter-spacing: 0.5px;
+}
+
+.mainmenubtn {
+    border: none;
+    cursor: pointer;
+    background-color: #111A4B;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-child {
+    display: none;
+    background-color: #2F3D8A;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.dropdown:hover .dropdown-child, .mainsaison {
+    display: flex;
+}
+.mainsaison figure {
+    flex-basis: 30%;
+}
+.mainsaison ul {
+    flex-basis: 70%;
+}
+.description{
+    background-color: #111A4B;
+}
+ul {
+    list-style-type: none;
+}
+.play{
+    position: absolute;
+    z-index: 2;
+    top: 160px;
+    left: 85px;
+    height: 52px;
+    max-width: 48px;
+}
+.screenshot {
+    height: 142px;
+    width: 142px;
+}
+.screenshot, .description {
+    margin: 5px;
+}
+.posterst {
+    height: 440px;
+    max-width: 330px;
+}
+.dropdown-child section {
+    font-size: small;
+}
+.reveal_episodes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.episodes {
+    display: none;
+}
+
+.mainmenubtn:active .episodes {
+    display: block;
+}
