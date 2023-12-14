@@ -604,6 +604,7 @@ input{
 }
 /*fin texte voir plus plus casting et scène de baiser*/
 
+/*Page Présentation_série_saison*/
 .dropdown {
     position: relative;
 }
@@ -669,10 +670,10 @@ ul {
     border-radius: 10px;
     text-align: center;
 }
-.mainmenubtn:active .episodes {
+.reveal_episodes:hover .episodes {
     display: block;
 }
-
+/*FIN Page Présentation_série_saison*/
 
 
 /*Media query*/
