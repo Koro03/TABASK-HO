@@ -626,11 +626,6 @@ input{
 .mainsaison ul {
     flex-basis: 70%;
 }
-.mainsaison ul li {
-    align-items: right;
-    text-align: center;
-    border: none;
-}
 .description{
     background-color: #111A4B;
 }
@@ -663,16 +658,18 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
 }
 .episodes {
     display: none;
 }
 .mainmenubtn {
+    border: none;
+    cursor: pointer;
     background-color: #111A4B;
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 .reveal_episodes:hover .episodes {
     display: block;
