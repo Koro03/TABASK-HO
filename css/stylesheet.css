@@ -77,7 +77,6 @@ article a:hover{
     border:solid #CF4307;
     border-radius: 10px;
     padding: 5px;
-    
 }
 
 /*
@@ -642,6 +641,13 @@ input{
     padding: 5px;
     transition: 1s;
     margin-right: 10;
+}
+.detail:hover{
+    color: #CF4307;
+    background-color: #fff;
+    border:solid #CF4307;
+    border-radius: 10px;
+    padding: 5px;
 }
 .description{
     background-color: #111A4B;
