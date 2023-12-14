@@ -416,7 +416,6 @@ video{
     align-items: center;
 }
 .presentation p{
-
     display: flex;
     padding: 10px;
     margin-right: 40px;
@@ -613,6 +612,7 @@ input{
 }
 /*fin texte voir plus plus casting et scène de baiser*/
 
+/*Page Présentation_série_saison*/
 .dropdown {
     position: relative;
 }
@@ -632,6 +632,15 @@ input{
 }
 .mainsaison ul {
     flex-basis: 70%;
+}
+.detail{
+    color: #ffffff;
+    background-color: #CF4307;
+    border:solid 2px #CF4307;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+    margin-right: 10;
 }
 .description{
     background-color: #111A4B;
@@ -662,6 +671,7 @@ ul {
     font-size: small;
 }
 .reveal_episodes {
+    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -671,17 +681,16 @@ ul {
 }
 .mainmenubtn {
     border: none;
-    cursor: pointer;
     background-color: #111A4B;
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
     text-align: center;
 }
-.mainmenubtn:active .episodes {
+.reveal_episodes:hover .episodes {
     display: block;
 }
-
+/*FIN Page Présentation_série_saison*/
 
 
 /*Media query*/
