@@ -195,14 +195,14 @@ main{
 
 #section2{
     display: inline-flex;
-    margin-left: 3em;   
+    margin-left: 2em;   
 }
 
 /*colonne 1 = bande annonce et photo saisons*/
 
 #colonne1{
     width: 30em;
-    margin-left: 2em;
+    margin-left: 1em;
     margin-right: 5em;
     
 }
@@ -264,7 +264,7 @@ video{
     width: 25em;
     height: 20em;
     text-align: center;
-    margin: 0.5em 3em 4.5em 3em;
+    margin: 2em 3em 4.5em 3em;
     padding: 1em;
 }
 
@@ -275,7 +275,7 @@ video{
     padding: 2em;
     margin-right: 4em;
     height: 65em;
-    width: 45em;
+    width: 35em;
     border-radius: 0px 20px 0px 20px;
 }
 
@@ -284,7 +284,7 @@ video{
 .ep{
     display: flex;
     flex-direction: row;
-    margin :15px;
+    margin :10px;
     align-items: center;
 }
 .ep > figcaption{
@@ -292,6 +292,13 @@ video{
 }
 #episode > figure{
     margin: 2em;
+}
+
+#episode > p{
+    background-color: #CF4307;
+    width: fit-content;
+    position: relative;
+    left: 20em;
 }
 
 #backstage{
