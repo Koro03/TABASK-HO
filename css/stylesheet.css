@@ -298,7 +298,7 @@ video{
 }
 
 
-/*Carousel*/
+/*Caroussel2*/
 .carroussel2{
     background-color: #5d3d7a;
     padding: 20px;
@@ -321,7 +321,7 @@ video{
 	display: flex; /* Utilisation de flexbox pour centrer le contenu */
 	justify-content: center;
 	align-items: center;
-	height: 50vh; /* Ajustement de la hauteur à 100% de la vue */
+	height: 40vh; /* Ajustement de la hauteur à 100% de la vue */
 }
 
 .slider {
@@ -347,7 +347,7 @@ video{
 
 .slide2 {
 	scroll-snap-align: start;
-	width: 470px;
+	width: 510px;
 	height: 250px;
 	background-size: cover;
 	background-position: center;
