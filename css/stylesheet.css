@@ -626,6 +626,15 @@ input{
 .mainsaison ul {
     flex-basis: 70%;
 }
+.detail{
+    color: #ffffff;
+    background-color: #CF4307;
+    border:solid 2px #CF4307;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+    margin-right: 10;
+}
 .description{
     background-color: #111A4B;
 }
