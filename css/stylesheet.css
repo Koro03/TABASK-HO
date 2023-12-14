@@ -77,7 +77,6 @@ article a:hover{
     border:solid #CF4307;
     border-radius: 10px;
     padding: 5px;
-    
 }
 
 /*
@@ -117,6 +116,8 @@ main{
     margin: auto auto 3em auto;
     padding: 2em;
     display: inline-flex;
+    width: fit-content;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .mot-cle{
@@ -178,11 +179,10 @@ main{
 }
 .casting_img{
     width: 9em;
-    height: 10em;
-    padding: 2em;
-    border-radius: 50%;
+    height: 11em;
+    padding: 1em;
     margin-right: 2em;
-    border-radius: 50%; 
+    border-radius: 40%; 
 }
 
 .casting > figure{
@@ -195,14 +195,14 @@ main{
 
 #section2{
     display: inline-flex;
-    
+    margin-left: 2em;   
 }
 
 /*colonne 1 = bande annonce et photo saisons*/
 
 #colonne1{
     width: 30em;
-    margin-left: 2em;
+    margin-left: 1em;
     margin-right: 5em;
     
 }
@@ -264,7 +264,7 @@ video{
     width: 25em;
     height: 20em;
     text-align: center;
-    margin: 0.5em 3em 4.5em 3em;
+    margin: 2em 3em 4.5em 3em;
     padding: 1em;
 }
 
@@ -273,8 +273,9 @@ video{
 #episode{
     background-color: #2F3D8A;
     padding: 2em;
+    margin-right: 4em;
     height: 65em;
-    width: 50em;
+    width: 35em;
     border-radius: 0px 20px 0px 20px;
 }
 
@@ -283,7 +284,7 @@ video{
 .ep{
     display: flex;
     flex-direction: row;
-    margin :15px;
+    margin :10px;
     align-items: center;
 }
 .ep > figcaption{
@@ -293,12 +294,19 @@ video{
     margin: 2em;
 }
 
+#episode > p{
+    background-color: #CF4307;
+    width: fit-content;
+    position: relative;
+    left: 20em;
+}
+
 #backstage{
     width: fit-content;
 }
 
 
-/*Carousel*/
+/*Caroussel2*/
 .carroussel2{
     background-color: #5d3d7a;
     padding: 20px;
@@ -347,7 +355,7 @@ video{
 
 .slide2 {
 	scroll-snap-align: start;
-	width: 470px;
+	width: 510px;
 	height: 250px;
 	background-size: cover;
 	background-position: center;
@@ -494,28 +502,6 @@ input{
     /**/
 }
 
-.mainmenubtn {
-    border: none;
-    cursor: pointer;
-    padding:20px;
-    margin-top:20px;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-child {
-    display: none;
-    min-width: 200px;
-    background-color: #2F3D8A;
-}
-.dropdown:hover .dropdown-child {
-    display: block;
-}
-li h3 {
-    background-color: #111A4B;
-}
-
 /*Carousel*/
 *,
 *::before,
@@ -642,26 +628,18 @@ li h3 {
     
 }
 /*fin texte voir plus plus casting et scène de baiser*/
-.mainmenubtn {
-    border: none;
-    cursor: pointer;
-    background-color: #111A4B;
-    padding: 30px;
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-}
+
+/*Page Présentation_série_saison*/
 .dropdown {
     position: relative;
 }
 .dropdown-child {
     display: none;
     background-color: #2F3D8A;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     margin: 20px;
+    min-width: 200px;
 }
 .dropdown:hover .dropdown-child, .mainsaison {
     display: flex;
@@ -672,6 +650,22 @@ li h3 {
 .mainsaison ul {
     flex-basis: 70%;
 }
+.detail{
+    color: #ffffff;
+    background-color: #CF4307;
+    border:solid 2px #CF4307;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+    margin-right: 10;
+}
+.detail:hover{
+    color: #CF4307;
+    background-color: #fff;
+    border:solid #CF4307;
+    border-radius: 10px;
+    padding: 5px;
+}
 .description{
     background-color: #111A4B;
 }
@@ -681,8 +675,8 @@ ul {
 .play{
     position: absolute;
     z-index: 2;
-    top: 160px;
-    left: 85px;
+    top: 165px;
+    left: 90px;
     height: 52px;
     max-width: 48px;
 }
@@ -701,18 +695,26 @@ ul {
     font-size: small;
 }
 .reveal_episodes {
+    cursor: pointer;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 .episodes {
     display: none;
 }
-
-.mainmenubtn:active .episodes {
+.mainmenubtn {
+    border: none;
+    background-color: #111A4B;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.reveal_episodes:hover .episodes {
     display: block;
 }
-
+/*FIN Page Présentation_série_saison*/
 
 
 
@@ -742,3 +744,9 @@ ul {
     padding-left: 1em;
     padding-right: 1em;
 }
+@media (width < 700px) {
+    #section2{
+      display: flex;
+      flex-direction: column;
+    }
+  }
