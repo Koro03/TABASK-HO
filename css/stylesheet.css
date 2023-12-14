@@ -403,14 +403,31 @@ video{
     background-color: #CF4307;
 }
 .presentation{
+    width: auto;
     display: inline-flex;
     align-items: center;
 }
 .presentation p{
-
+    width: 35em;
+    height: 25em;
     display: flex;
     padding: 10px;
     margin-right: 40px;
+}
+.presentation img{
+    width: 550px;
+    height: 50%;
+    float: right;
+    
+}
+
+.presentation figure a{
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 footer{
     display: inline-flex;
@@ -698,8 +715,30 @@ ul {
 
 
 
+
+
 /*Media query*/
 
 @media screen {
     
+}
+
+.lienEpisode_limite_age{
+    width: fit-content;
+    margin-right:2em;
+    margin-left: 2em ;
+    color: #fff;
+    
+     
+}
+.lienEpisode_limite_age figure{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-right: 2em;
+    
+}
+.lienEpisode_limite_age figcaption{
+    padding-left: 1em;
+    padding-right: 1em;
 }
