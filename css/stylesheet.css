@@ -628,7 +628,7 @@ li h3 {
 .dropdown-child {
     display: none;
     background-color: #2F3D8A;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     margin: 20px;
 }
@@ -650,7 +650,7 @@ ul {
 .play{
     position: absolute;
     z-index: 2;
-    top: 180px;
+    top: 185px;
     left: 85px;
     height: 52px;
     max-width: 48px;
