@@ -664,6 +664,7 @@ ul {
     font-size: small;
 }
 .reveal_episodes {
+    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -673,7 +674,6 @@ ul {
 }
 .mainmenubtn {
     border: none;
-    cursor: pointer;
     background-color: #111A4B;
     padding: 30px;
     margin: 20px;
