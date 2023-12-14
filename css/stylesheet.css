@@ -479,28 +479,6 @@ input{
     /**/
 }
 
-.mainmenubtn {
-    border: none;
-    cursor: pointer;
-    padding:20px;
-    margin-top:20px;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-child {
-    display: none;
-    min-width: 200px;
-    background-color: #2F3D8A;
-}
-.dropdown:hover .dropdown-child {
-    display: block;
-}
-li h3 {
-    background-color: #111A4B;
-}
-
 /*Carousel*/
 *,
 *::before,
@@ -627,26 +605,17 @@ li h3 {
     
 }
 /*fin texte voir plus plus casting et scène de baiser*/
-.mainmenubtn {
-    border: none;
-    cursor: pointer;
-    background-color: #111A4B;
-    padding: 30px;
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-}
+
 .dropdown {
     position: relative;
 }
 .dropdown-child {
     display: none;
     background-color: #2F3D8A;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     margin: 20px;
+    min-width: 200px;
 }
 .dropdown:hover .dropdown-child, .mainsaison {
     display: flex;
@@ -666,8 +635,8 @@ ul {
 .play{
     position: absolute;
     z-index: 2;
-    top: 160px;
-    left: 85px;
+    top: 165px;
+    left: 90px;
     height: 52px;
     max-width: 48px;
 }
@@ -688,12 +657,20 @@ ul {
 .reveal_episodes {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 .episodes {
     display: none;
 }
-
+.mainmenubtn {
+    border: none;
+    cursor: pointer;
+    background-color: #111A4B;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 .mainmenubtn:active .episodes {
     display: block;
 }
