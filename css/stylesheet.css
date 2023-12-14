@@ -477,18 +477,6 @@ input{
     /**/
 }
 
-.dropdown {
-    position: relative;
-}
-.dropdown-child {
-    display: none;
-    min-width: 200px;
-    background-color: #2F3D8A;
-}
-.dropdown:hover .dropdown-child {
-    display: block;
-}
-
 /*Carousel*/
 *,
 *::before,
@@ -615,12 +603,17 @@ input{
     
 }
 /*fin texte voir plus plus casting et scène de baiser*/
+
+.dropdown {
+    position: relative;
+}
 .dropdown-child {
     display: none;
     background-color: #2F3D8A;
     padding: 15px;
     border-radius: 10px;
     margin: 20px;
+    min-width: 200px;
 }
 .dropdown:hover .dropdown-child, .mainsaison {
     display: flex;
