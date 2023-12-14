@@ -477,15 +477,8 @@ input{
     /**/
 }
 
-.mainmenubtn {
-    border: none;
-    cursor: pointer;
-    padding:20px;
-    margin-top:20px;
-}
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 .dropdown-child {
     display: none;
@@ -494,9 +487,6 @@ input{
 }
 .dropdown:hover .dropdown-child {
     display: block;
-}
-li h3 {
-    background-color: #111A4B;
 }
 
 /*Carousel*/
@@ -650,8 +640,8 @@ ul {
 .play{
     position: absolute;
     z-index: 2;
-    top: 185px;
-    left: 85px;
+    top: 165px;
+    left: 90px;
     height: 52px;
     max-width: 48px;
 }
@@ -682,6 +672,7 @@ ul {
     cursor: pointer;
     background-color: #111A4B;
     padding: 30px;
+    margin: 20px;
     border-radius: 10px;
     text-align: center;
 }
