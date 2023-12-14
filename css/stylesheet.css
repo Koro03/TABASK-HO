@@ -693,7 +693,7 @@ ul {
     border-radius: 10px;
     text-align: center;
 }
-.reveal_episodes:active .episodes {
+.reveal_episodes:hover .episodes {
     display: block;
 }
 /*FIN Page Présentation_série_saison*/
