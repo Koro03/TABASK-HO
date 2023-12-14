@@ -321,7 +321,7 @@ video{
 	display: flex; /* Utilisation de flexbox pour centrer le contenu */
 	justify-content: center;
 	align-items: center;
-	height: 40vh; /* Ajustement de la hauteur à 100% de la vue */
+	height: 50vh; /* Ajustement de la hauteur à 100% de la vue */
 }
 
 .slider {
