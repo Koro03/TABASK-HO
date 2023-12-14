@@ -117,6 +117,8 @@ main{
     margin: auto auto 3em auto;
     padding: 2em;
     display: inline-flex;
+    width: fit-content;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .mot-cle{
@@ -178,11 +180,10 @@ main{
 }
 .casting_img{
     width: 9em;
-    height: 10em;
-    padding: 2em;
-    border-radius: 50%;
+    height: 11em;
+    padding: 1em;
     margin-right: 2em;
-    border-radius: 50%; 
+    border-radius: 40%; 
 }
 
 .casting > figure{
@@ -195,7 +196,7 @@ main{
 
 #section2{
     display: inline-flex;
-    
+    margin-left: 3em;   
 }
 
 /*colonne 1 = bande annonce et photo saisons*/
@@ -273,8 +274,9 @@ video{
 #episode{
     background-color: #2F3D8A;
     padding: 2em;
+    margin-right: 4em;
     height: 65em;
-    width: 50em;
+    width: 45em;
     border-radius: 0px 20px 0px 20px;
 }
 
@@ -321,7 +323,7 @@ video{
 	display: flex; /* Utilisation de flexbox pour centrer le contenu */
 	justify-content: center;
 	align-items: center;
-	height: 40vh; /* Ajustement de la hauteur à 100% de la vue */
+	height: 50vh; /* Ajustement de la hauteur à 100% de la vue */
 }
 
 .slider {
@@ -700,6 +702,9 @@ ul {
 
 /*Media query*/
 
-@media screen {
-    
-}
+@media (width < 700px) {
+    #section2{
+      display: flex;
+      flex-direction: column;
+    }
+  }
