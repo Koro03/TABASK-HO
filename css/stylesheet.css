@@ -104,6 +104,27 @@ article p + img{
 figure > img{
     height: 50px;
 }
+.casting{
+    display: inline-flex;
+    width: 40em;
+    background-color: #5d3d7a;
+    margin-right:auto;
+    margin-left: 7em;
+    margin-top: 2em;
+    
+}
+
+.casting_img{
+    width: 9em;
+    height: 11em;
+    padding: 1em;
+    margin-right: 2em;
+    border-radius: 40%; 
+}
+
+.casting > figure{
+    height: 3em;
+}
 
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
@@ -165,6 +186,58 @@ figure > img{
     width: 100%;
     
 }
+
+.reward{
+    background-color: #2F3D8A;
+    padding: 1em;
+    margin:1em;
+    border: solid #2F3D8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+.reward figure{
+    display: inline-flex;
+    align-items: center;
+}
+input{
+    display: none;
+    position: relative;
+    top: 15px;
+    width: 10em;
+    height: 2em;
+}
+.loupe:hover + input{
+    display: inline-block;
+}
+.poster img{
+    height: 330;
+    width: 414;
+}
+.poster{
+    font-size: larger;
+}
+.lienEpisode_limite_age{
+    width: fit-content;
+    margin-right:2em;
+    margin-left: 2em ;
+    color: #fff;
+    
+     
+}
+.lienEpisode_limite_age figure{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-right: 2em;
+    
+}
+.lienEpisode_limite_age figcaption{
+    padding-left: 1em;
+    padding-right: 1em;
+}
 /*******************************************************************************************
 *                           main page : backstage                                          *
 *                                                                                          *
@@ -173,6 +246,14 @@ figure > img{
 *                           main page : présentation détaillé                              *
 *                                                                                          *
 ********************************************************************************************/
+#section1{
+    background-color: #5d3d7a;
+    margin: 15px 15px 3em auto;
+    padding: 2em;
+    display: inline-flex;
+    width: 100%;
+    border-radius: 0px 20px 0px 20px;
+}
 /*******************************************************************************************
 *                           main page : présentation episode et saison                     *
 *                                                                                          *
@@ -185,18 +266,6 @@ figure > img{
     border-radius: 30px;
 }
 
-
-
-/*haut de page detaillé*/
-
-#section1{
-    background-color: #5d3d7a;
-    margin: 15px 15px 3em auto;
-    padding: 2em;
-    display: inline-flex;
-    width: 100%;
-    border-radius: 0px 20px 0px 20px;
-}
 
 
 
@@ -233,26 +302,8 @@ figure > img{
     margin: 4em 2em 4em 4em;
 }
 
-.casting{
-    display: inline-flex;
-    width: 40em;
-    background-color: #5d3d7a;
-    margin-right:auto;
-    margin-left: 7em;
-    margin-top: 2em;
-    
-}
-.casting_img{
-    width: 9em;
-    height: 11em;
-    padding: 1em;
-    margin-right: 2em;
-    border-radius: 40%; 
-}
 
-.casting > figure{
-    height: 3em;
-}
+
 
 
 /* debut du main principal page detaillé*/
@@ -512,39 +563,6 @@ footer figure + img{
     margin-left: auto;
 }
 
-.reward{
-    background-color: #2F3D8A;
-    padding: 1em;
-    margin:1em;
-    border: solid #2F3D8A;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    
-}
-.reward figure{
-    display: inline-flex;
-    align-items: center;
-}
-input{
-    display: none;
-    position: relative;
-    top: 15px;
-    width: 10em;
-    height: 2em;
-}
-.loupe:hover + input{
-    display: inline-block;
-}
-.poster img{
-    height: 330;
-    width: 414;
-}
-.poster{
-    font-size: larger;
-}
-
 /*Carousel*/
 *,
 *::before,
@@ -582,7 +600,7 @@ input{
 }
 
 .slide > img {
-
+    /**/
 }
 
 .slider::-webkit-scrollbar {
@@ -781,27 +799,6 @@ ul {
     display: block;
 }
 /*FIN Page Présentation_série_saison*/
-
-
-.lienEpisode_limite_age{
-    width: fit-content;
-    margin-right:2em;
-    margin-left: 2em ;
-    color: #fff;
-    
-     
-}
-.lienEpisode_limite_age figure{
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding-right: 2em;
-    
-}
-.lienEpisode_limite_age figcaption{
-    padding-left: 1em;
-    padding-right: 1em;
-}
 
 
 /*******************************************************************************************
