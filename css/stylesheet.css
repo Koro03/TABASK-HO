@@ -4,6 +4,11 @@ body{
     padding: 1.5em;
     font-family: Inter, Roboto, sans-serif;
 }
+
+/*******************************************************************************************
+*                           header                                                         *
+*                                                                                          *
+********************************************************************************************/
 header div{
     display: inline-flex;
     align-items: center;
@@ -49,12 +54,23 @@ nav a{
 }
 nav img{
     margin: 15px; 
-    margin: 15px;
 }
 nav div {
     margin-right: auto;
     margin-left: auto;
 }
+
+/*******************************************************************************************
+*                                    les objets commun                                     *
+*                                                                                          *
+********************************************************************************************/
+
+main{
+    margin: auto;
+    padding: 1em;
+    color: #ffffff;
+}
+
 p{
     color: #ffffff;
     background-color: #5d3d7a;
@@ -79,23 +95,89 @@ article a:hover{
     padding: 5px;
 }
 
-/*
-article + article p{
-    width: fit-content;
-    padding: 5px;
-    background-color: #8F2323;
-}
-*/
 article p + img{
     width: 450px;
     height: 20%;
     float: right;
 }
 
-
 figure > img{
     height: 50px;
 }
+
+/*******************************************************************************************
+*                           main page : présentation ge                                    *
+*                                                                                          *
+********************************************************************************************/
+.presentation{
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+}
+.presentation p{
+    width: 35em;
+    height: 25em;
+    display: flex;
+    padding: 10px;
+    margin-right: 40px;
+}
+.presentation img{
+    width: 550px;
+    height: 50%;
+    float: right;
+    
+}
+
+.presentation figure a{
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mot-cle{
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 1em;
+    border-radius: 30px;
+    width: 100%;
+}
+.mot-cle p{
+    background-color: #8f2328;
+    padding: 5px;
+    margin: 10px;
+    border:solid 2px #8f2328;
+    width: fit-content;
+    height: fit-content;
+}
+.mot-cle img{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    margin-left:auto ;
+    
+}
+
+.limite_motcle{
+    display: inline-flex;
+    width: 100%;
+    
+}
+/*******************************************************************************************
+*                           main page : backstage                                          *
+*                                                                                          *
+********************************************************************************************/
+/*******************************************************************************************
+*                           main page : présentation détaillé                              *
+*                                                                                          *
+********************************************************************************************/
+/*******************************************************************************************
+*                           main page : présentation episode et saison                     *
+*                                                                                          *
+********************************************************************************************/
+
 
 #casting{
     display: flex;
@@ -103,11 +185,7 @@ figure > img{
     border-radius: 30px;
 }
 
-main{
-    margin: auto;
-    padding: 1em;
-    color: #ffffff;
-}
+
 
 /*haut de page detaillé*/
 
@@ -120,20 +198,7 @@ main{
     border-radius: 0px 20px 0px 20px;
 }
 
-.mot-cle{
-    display: inline-flex;
-    padding: 5px;
-    margin-top: 1em;
-    border-radius: 30px;
-}
-.mot-cle p{
-    background-color: #8f2328;
-    padding: 5px;
-    margin: 10px;
-    border:solid 2px #8f2328;
-    width: fit-content;
-    height: fit-content;
-}
+
 
 #limite_age{
     height: 5em;
@@ -411,33 +476,14 @@ video{
 #section2 > p{
     background-color: #CF4307;
 }
-.presentation{
-    width: auto;
-    display: inline-flex;
-    align-items: center;
-}
-.presentation p{
-    width: 35em;
-    height: 25em;
-    display: flex;
-    padding: 10px;
-    margin-right: 40px;
-}
-.presentation img{
-    width: 550px;
-    height: 50%;
-    float: right;
-    
-}
 
-.presentation figure a{
-    width: fit-content;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    
-}
+
+/*******************************************************************************************
+*                                           footer                                         *
+*                                                                                          *
+********************************************************************************************/
+
+
 footer{
     display: inline-flex;
     align-items: center;
@@ -497,10 +543,6 @@ input{
 }
 .poster{
     font-size: larger;
-}
-
-@media screen {
-    /**/
 }
 
 /*Carousel*/
@@ -718,14 +760,6 @@ ul {
 /*FIN Page Présentation_série_saison*/
 
 
-
-
-/*Media query*/
-
-@media screen {
-    
-}
-
 .lienEpisode_limite_age{
     width: fit-content;
     margin-right:2em;
@@ -745,6 +779,27 @@ ul {
     padding-left: 1em;
     padding-right: 1em;
 }
+
+
+/*******************************************************************************************
+*                           media querry page : présentation ge                            *
+*                                                                                          *
+********************************************************************************************/
+@media screen {
+    
+}
+/*******************************************************************************************
+*                           media querry page : présentation détaillé                      *
+*                                                                                          *
+********************************************************************************************/
+/*******************************************************************************************
+*                           media querry page : backstage                                  *
+*                                                                                          *
+********************************************************************************************/
+/********************************************************************************************
+*                           media querry page : presentation episode saison                 *
+*                                                                                           *
+*********************************************************************************************/
 @media (width < 700px) {
     #section2{
       display: flex;
