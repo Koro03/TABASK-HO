@@ -544,14 +544,6 @@ video{
 }
 
 
-#photo_saison{
-    background-color: #5d3d7a;
-    margin-top: 2em;
-    width: 35em;
-    height: 25em;
-    padding: 20px;
-}
-
 #photo_saison > img{
     align-self: center;
     height: 20em;
@@ -625,6 +617,8 @@ video{
     width: 35em;
     height: 25em;
     margin-top: 2em;
+    border-radius: 0px 20px 0px 20px;
+
 }
 *,
 *::before,
