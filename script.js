@@ -4,4 +4,5 @@ const clicpourvoirplus = (element) => {
     }else{
       element.classList.add("opened")
     }
+    
   }
