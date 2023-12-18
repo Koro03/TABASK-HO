@@ -1056,9 +1056,8 @@ ul {
     .casting figure {
         margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
         margin-bottom: 10px;
-    
+    }
 }
-
 /*******************************************************************************************
 *                           media querry page : backstage                                  *
 *                                                                                          *
