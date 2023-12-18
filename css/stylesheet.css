@@ -111,7 +111,7 @@ figure > img{
     display: inline-flex;
     width: 40em;
     background-color: #5d3d7a;
-    margin-right:auto;
+    margin-right:2em;
     margin-left: 7em;
     margin-top: 2em;
     
@@ -121,8 +121,9 @@ figure > img{
     width: 9em;
     height: 11em;
     padding: 1em;
-    margin-right: 2em;
-    border-radius: 40%; 
+    margin-right: 3em;
+    border-radius: 40%;
+    max-width: 100%; 
 }
 
 .casting > figure{
@@ -620,7 +621,10 @@ input{
 #colonnedroite{
     display: flex;
     flex-direction: column;
+    /*
     margin: 4em 2em 4em 4em;
+    */
+    margin-left: 5em;
 }
 
 
@@ -694,7 +698,7 @@ video{
     width: 25em;
     height: 25em;
     text-align: center;
-    margin: 0.5em 3em 4.5em 3em;
+    margin: 0.5em 3em 7em 3em;
     padding: 3em;
 }
 
@@ -1032,6 +1036,29 @@ ul {
 *                           media querry page : présentation détaillé                      *
 *                                                                                          *
 ********************************************************************************************/
+@media (width < 700px) {
+    #section2{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+@media (width < 700px) {
+    #section1{
+        flex-direction: column;
+    }
+    .casting{
+        flex-direction: column;
+    }
+    #colonnedroite{
+        flex-direction: column;
+    }
+    .casting figure {
+        margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
+        margin-bottom: 10px;
+    
+}
+
 /*******************************************************************************************
 *                           media querry page : backstage                                  *
 *                                                                                          *
@@ -1040,9 +1067,3 @@ ul {
 *                           media querry page : presentation episode saison                 *
 *                                                                                           *
 *********************************************************************************************/
-@media (width < 700px) {
-    #section2{
-      display: flex;
-      flex-direction: column;
-    }
-  }
