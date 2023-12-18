@@ -1000,6 +1000,16 @@ ul {
 .reveal_episodes:hover .episodes {
     display: block;
 }
+#ep{
+    background-color: #111A4B;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    min-width: 200px;
+}
+.descriptionep{
+    background-color: #2F3D8A;
+}
 /*FIN Page Présentation_série_saison*/
 
 
