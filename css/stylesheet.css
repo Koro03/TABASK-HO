@@ -656,7 +656,7 @@ input{
 }
 
 #bande-annonce{
-    background-color:#2F3D8A ;
+    background-color:#111A4B;
     padding: 20px;
     width: 35em;
     height: 25em;
@@ -692,16 +692,16 @@ video{
     background-color:#5D3D7A ;
     border-radius: 0px 20px 0px 20px;
     width: 25em;
-    height: 20em;
+    height: 25em;
     text-align: center;
-    margin: 2em 3em 4.5em 3em;
-    padding: 1em;
+    margin: 0.5em 3em 4.5em 3em;
+    padding: 3em;
 }
 
 
 
 #episode{
-    background-color: #2F3D8A;
+    background-color: #111A4B;
     padding: 2em;
     margin-right: 4em;
     height: 65em;
@@ -731,6 +731,14 @@ video{
     left: 20em;
 }
 
+.hidden:not(#episode-title) {
+    display: none !important;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+}
 #backstage{
     width: fit-content;
 }
