@@ -126,6 +126,14 @@ figure > img{
     height: 3em;
 }
 
+#producteur{
+    width: 15em;
+    height: 11em;
+    padding: 1em;
+    margin-left: -7em;
+    margin-right: 2em;
+    border-radius: 40%;
+}
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
