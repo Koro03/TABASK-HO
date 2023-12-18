@@ -137,25 +137,22 @@ figure > img{
 }
 .presentation p{
     width: 35em;
-    height: 25em;
+    height: fit-content;
     display: flex;
-    padding: 10px;
+    padding: 2em;
     margin-right: 40px;
+    margin-bottom:4em ;
 }
 .presentation img{
-    width: 550px;
+    width: 750px;
     height: 50%;
     float: right;
     
 }
 
-.presentation figure a{
-    width: fit-content;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    
+.presentation figcaption a{
+    margin: 40%;
+  
 }
 
 .mot-cle{
@@ -220,23 +217,38 @@ input{
     font-size: larger;
 }
 .lienEpisode_limite_age{
+    display: inline-flex;
     width: fit-content;
+
     margin-right:2em;
     margin-left: 2em ;
     color: #fff;
     
+    
+     
+}
+.lienEpisode_limite_age figure + img{
+    width: 64px;
+    height: 64px;
+
      
 }
 .lienEpisode_limite_age figure{
     display: inline-flex;
     flex-wrap: nowrap;
     align-items: center;
+
     padding-right: 2em;
+    
     
 }
 .lienEpisode_limite_age figcaption{
     padding-left: 1em;
     padding-right: 1em;
+    display: inline-flex;
+    width: 100%;
+    
+
 }
 /*******************************************************************************************
 *                           main page : backstage                                          *
