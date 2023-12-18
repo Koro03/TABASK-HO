@@ -935,7 +935,7 @@ input{
     margin: 20px;
     min-width: 200px;
 }
-.dropdown:hover .dropdown-child, .mainsaison {
+.dropdown:hover .dropdown-child, #ep, .mainsaison {
     display: flex;
 }
 .mainsaison figure {
@@ -978,7 +978,7 @@ ul {
     height: 142px;
     width: 142px;
 }
-.screenshot, .description {
+.screenshot, .description,#ep section {
     margin: 5px;
 }
 .posterst {
