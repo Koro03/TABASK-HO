@@ -20,6 +20,9 @@ header div img{
     height: 64px;
 }
 h1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: fit-content;
     text-align: center; 
     margin-left: 2em;
@@ -49,7 +52,7 @@ nav a{
     border-radius: 10px;
     padding : 5px;
     margin: 15px;
-    width: 7em;
+    width: 15em;
     text-align: center;
 }
 nav img{
@@ -108,7 +111,7 @@ figure > img{
     display: inline-flex;
     width: 40em;
     background-color: #5d3d7a;
-    margin-right:auto;
+    margin-right:2em;
     margin-left: 7em;
     margin-top: 2em;
     
@@ -118,14 +121,23 @@ figure > img{
     width: 9em;
     height: 11em;
     padding: 1em;
-    margin-right: 2em;
-    border-radius: 40%; 
+    margin-right: 3em;
+    border-radius: 40%;
+    max-width: 100%; 
 }
 
 .casting > figure{
     height: 3em;
 }
 
+#producteur{
+    width: 15em;
+    height: 11em;
+    padding: 1em;
+    margin-left: -7em;
+    margin-right: 2em;
+    border-radius: 40%;
+}
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
@@ -256,6 +268,8 @@ input{
 ********************************************************************************************/
 /************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
 /*********************************   Caroussel    ********************************************************/
+
+
 *,
 *::before,
 *::after {
@@ -364,6 +378,7 @@ input{
   height : 100%;
   
   overflow: hidden;
+  
 }
 
 .container::before {
@@ -427,6 +442,10 @@ input{
     align-content: flex-start;
     justify-content: space-between;
 }
+.castingbaiser > figure > h4 {
+    text-align: center;
+    font-size:larger;
+}
 .castingbaiser > figure > img {
     height: auto;
     width: 20em;
@@ -447,6 +466,114 @@ input{
 
 
 /*********************************      fin mid main      *****************************************************************/
+/*********************************      début groupe annecdotes       *****************************************************/
+
+
+.groupeanecdote{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#secrettournage {
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 5px;
+}
+
+.groupeanecdote > article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px 3em;
+    background-color: #111A4B;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.groupeanecdote > article > img {
+    border-radius: 10px;
+    height: auto;
+    margin: 20px 30px;
+}
+
+.groupeanecdote > article > .textscrollbar{
+    flex-grow: 1;
+    background-color: none;
+    overflow: auto;
+    height: 15em;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    
+}
+
+.groupeanecdote > article > .textscrollbar > p{
+    background-color: #111A4B;
+    border-radius: 0;
+    border: none;
+    margin: 0 10px 5px 10px;
+
+}
+
+/*barre de scroll personnalisée*/
+
+#stylescrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#stylescrollbar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#stylescrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #808080;
+}
+
+
+
+
+/*fin barre de scroll personnalisée*/
+
+/*********************************      fin groupe annecdotes       *******************************************************/
+/*********************************      liste betisier      ***************************************************************/
+
+
+.listebetisier {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    margin: 2em 0;
+    
+}
+.listebetisier > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.listebetisier > ul > li {
+    margin: 0 40px; 
+    background-color: #111A4B;
+    border-radius: 10px;
+    padding: 1.5em 3em;
+}
+
+/*********************************      fin liste betisier      ***********************************************************/
 
 /************************************************************************** FIN PAGE BACKSTAGE **************************************************************************/
 /*******************************************************************************************
@@ -506,7 +633,10 @@ input{
 #colonnedroite{
     display: flex;
     flex-direction: column;
+    /*
     margin: 4em 2em 4em 4em;
+    */
+    margin-left: 5em;
 }
 
 
@@ -542,7 +672,7 @@ input{
 }
 
 #bande-annonce{
-    background-color:#2F3D8A ;
+    background-color:#111A4B;
     padding: 20px;
     width: 35em;
     height: 25em;
@@ -578,16 +708,16 @@ video{
     background-color:#5D3D7A ;
     border-radius: 0px 20px 0px 20px;
     width: 25em;
-    height: 20em;
+    height: 25em;
     text-align: center;
-    margin: 2em 3em 4.5em 3em;
-    padding: 1em;
+    margin: 0.5em 3em 7em 3em;
+    padding: 3em;
 }
 
 
 
 #episode{
-    background-color: #2F3D8A;
+    background-color: #111A4B;
     padding: 2em;
     margin-right: 4em;
     height: 65em;
@@ -617,6 +747,14 @@ video{
     left: 20em;
 }
 
+.hidden:not(#episode-title) {
+    display: none !important;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+}
 #backstage{
     width: fit-content;
 }
@@ -813,7 +951,7 @@ input{
     margin: 20px;
     min-width: 200px;
 }
-.dropdown:hover .dropdown-child, .mainsaison {
+.dropdown:hover .dropdown-child, #ep, .mainsaison {
     display: flex;
 }
 .mainsaison figure {
@@ -856,7 +994,7 @@ ul {
     height: 142px;
     width: 142px;
 }
-.screenshot, .description {
+.screenshot, .description,#ep section {
     margin: 5px;
 }
 .posterst {
@@ -886,6 +1024,16 @@ ul {
 .reveal_episodes:hover .episodes {
     display: block;
 }
+#ep{
+    background-color: #111A4B;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    min-width: 200px;
+}
+.descriptionep{
+    background-color: #2F3D8A;
+}
 /*FIN Page Présentation_série_saison*/
 
 
@@ -900,6 +1048,29 @@ ul {
 *                           media querry page : présentation détaillé                      *
 *                                                                                          *
 ********************************************************************************************/
+@media (width < 700px) {
+    #section2{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+@media (width < 700px) {
+    #section1{
+        flex-direction: column;
+    }
+    .casting{
+        flex-direction: column;
+    }
+    #colonnedroite{
+        flex-direction: column;
+    }
+    .casting figure {
+        margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
+        margin-bottom: 10px;
+    
+}
+
 /*******************************************************************************************
 *                           media querry page : backstage                                  *
 *                                                                                          *
@@ -908,9 +1079,3 @@ ul {
 *                           media querry page : presentation episode saison                 *
 *                                                                                           *
 *********************************************************************************************/
-@media (width < 700px) {
-    #section2{
-      display: flex;
-      flex-direction: column;
-    }
-  }
