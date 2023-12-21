@@ -9,10 +9,8 @@ const clicpourvoirplus = (element) => {
   }
 
 
-function toggleDetails(button) {
-    var figure = button.parentNode;
-    var details = figure.querySelectorAll('figcaption:not(:first-child)');
-    details.forEach(function (detail) {
-        detail.classList.toggle('hidden');
-    });
+  function toggleDetails(button) {
+    var description = button.previousElementSibling; // Assurez-vous que c'est le bon sélecteur
+    description.classList.toggle('hidden');
 }
+
