@@ -138,6 +138,11 @@ figure > img{
     margin-right: 2em;
     border-radius: 40%;
 }
+
+article{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 20px
+}
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
@@ -747,14 +752,21 @@ video{
     left: 20em;
 }
 
-.hidden {
+.initial-hidden {
     display: none;
+    background-color: transparent;
+}
+
+.hidden p{
+    background-color: transparent;
+    border: none;
 }
 
 button{
     background-color:transparent;
     border:none;
 }
+
 #backstage{
     width: fit-content;
 }
