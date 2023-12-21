@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom, #212b61, #313068, #40346e, #4f3974, #5d3d7a);
+    background-image: linear-gradient(to bottom, #212b61, #313068,#313068, #2e2068, #4f3974, #5d3d7a);
     margin: 1em;
     padding: 1.5em;
     font-family: Inter, Roboto, sans-serif;
@@ -25,7 +25,7 @@ h1{
     flex-wrap: nowrap;
     width: fit-content;
     text-align: center; 
-    margin-left: 2em;
+    margin-left:60% ;
     background-color: #5d3d7a;
     color: #ffffff;
     border: solid #5d3d7a ;
@@ -48,15 +48,23 @@ nav{
 nav a{
     color: #fff;
     background-color: #CF4307;
-    border: solid #5d3d7a;
     border-radius: 10px;
     padding : 5px;
     margin: 15px;
     width: 15em;
     text-align: center;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #51425e);
+    box-shadow: inset 4.3px 4.3px 7px #b95529;
+    transition: 0.25s;
+}
+nav a:hover{
+    filter: drop-shadow(0px 0px 0px rgb(63, 22, 102));
+    box-shadow:  inset 4.3px 4.3px 7px #7e2b08
+    
 }
 nav img{
     margin: 15px; 
+   
 }
 nav div {
     margin-right: auto;
@@ -96,6 +104,7 @@ article a:hover{
     border:solid #CF4307;
     border-radius: 10px;
     padding: 5px;
+    
 }
 
 article p + img{
@@ -115,6 +124,7 @@ figure > img{
     margin-left: 7em;
     margin-top: 2em;
     
+    
 }
  
 .casting_img{
@@ -123,7 +133,10 @@ figure > img{
     padding: 1em;
     margin-right: 3em;
     border-radius: 40%;
-    max-width: 100%; 
+    max-width: 100%;
+    filter: drop-shadow(4px 4px 4px#311f40);
+    
+    
 }
 
 .casting > figure{
@@ -156,14 +169,18 @@ figure > img{
     margin-bottom:4em ;
 }
 .presentation img{
-    width: 750px;
+    width:550px;
     height: 50%;
     float: right;
+    
     
 }
 
 .presentation figcaption a{
-    margin: 40%;
+    margin: 35%;
+    border: none;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(42, 14, 68));
+    transition: 0.25s;
   
 }
 
@@ -173,6 +190,7 @@ figure > img{
     margin-top: 1em;
     border-radius: 30px;
     width: 100%;
+    
 }
 .mot-cle p{
     background-color: #8f2328;
@@ -181,6 +199,7 @@ figure > img{
     border:solid 2px #8f2328;
     width: fit-content;
     height: fit-content;
+    box-shadow: inset 4.3px 4.3px 7px #b72129;
 }
 .mot-cle img{
     display: flex;
@@ -210,6 +229,7 @@ figure > img{
 .reward figure{
     display: inline-flex;
     align-items: center;
+    margin: 1em;
 }
 input{
     display: none;
@@ -231,7 +251,6 @@ input{
 .lienEpisode_limite_age{
     display: inline-flex;
     width: fit-content;
-
     margin-right:2em;
     margin-left: 2em ;
     color: #fff;
@@ -259,8 +278,15 @@ input{
     padding-right: 1em;
     display: inline-flex;
     width: 100%;
-    
 
+}
+.lienEpisode_limite_age figcaption a{
+    display: inline;
+    background-color: transparent;
+    border: transparent;
+    width: 5em;
+    flex-wrap: nowrap;
+    
 }
 
 #pageSerieG{
@@ -268,8 +294,9 @@ input{
     margin-right:20% ;
     margin-left: 20%;
 
-
 }
+
+
 /*******************************************************************************************
 *                           main page : backstage                                          *
 *                                                                                          *
