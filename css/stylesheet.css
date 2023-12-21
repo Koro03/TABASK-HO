@@ -151,6 +151,10 @@ figure > img{
     margin-right: 2em;
     border-radius: 40%;
 }
+
+div > article{
+    box-shadow: -5px -5px 10px #464646, 5px 5px 10px #202020 ;
+} 
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
@@ -782,14 +786,21 @@ video{
     left: 20em;
 }
 
-.hidden {
+.initial-hidden {
     display: none;
+    background-color: transparent;
+}
+
+.hidden p{
+    background-color: transparent;
+    border: none;
 }
 
 button{
     background-color:transparent;
     border:none;
 }
+
 #backstage{
     width: fit-content;
 }
@@ -970,9 +981,6 @@ input{
     font-size: larger;
 }
 
-@media screen {
-    /**/
-}
 
 /*Page Présentation_série_saison*/
 .dropdown {
@@ -1083,27 +1091,35 @@ ul {
 *                           media querry page : présentation détaillé                      *
 *                                                                                          *
 ********************************************************************************************/
-@media (width < 700px) {
-    #section2{
-      display: flex;
-      flex-direction: column;
-    }
-}
 
-@media (width < 700px) {
+@media (width < 1290px) {
     #section1{
         flex-direction: column;
     }
+    #section2{
+        display: flex;
+        flex-direction: column;
+      }
     .casting{
         flex-direction: column;
+        height: 60em;
     }
     #colonnedroite{
         flex-direction: column;
     }
     .casting figure {
         margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
+    .casting_img{
+        height: 100px;
+        width: 150px;
+    }
+}
+
+
+@media (width < 429px){
+    .casting
 }
 /*******************************************************************************************
 *                           media querry page : backstage                                  *
