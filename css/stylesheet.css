@@ -116,7 +116,7 @@ figure > img{
     margin-top: 2em;
     
 }
-
+ 
 .casting_img{
     width: 9em;
     height: 11em;
@@ -747,8 +747,8 @@ video{
     left: 20em;
 }
 
-.hidden:not(#episode-title) {
-    display: none !important;
+.hidden {
+    display: none;
 }
 
 button{
