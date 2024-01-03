@@ -308,17 +308,6 @@ input{
 /************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
 /*********************************   Caroussel    ********************************************************/
 
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
 .slider-wrapper {
     position: relative;
     display: flex; /* Utilisation de flexbox pour centrer le contenu */
@@ -366,7 +355,7 @@ input{
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    gap: 10px;
+    gap: 23px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -374,8 +363,7 @@ input{
 }
 
 .dots a {
-    --dots-size: 6px;
-
+    --dots-size: 16px;
     width: var(--dots-size);
     height: var(--dots-size);
     border-radius: 50%;
@@ -383,10 +371,13 @@ input{
     opacity: 0.85;
     transition: opacity ease 200ms;
     cursor: pointer;
+    border: #000 2px solid;
 }
 
 .dots a:hover {
     opacity: 1;
+    background-color: #CF4307;
+    --dots-size: 20px;
 }
 
 /*********************************   fin Caroussel    ********************************************************/
@@ -395,15 +386,11 @@ input{
   
   .container {
   position : relative;
-  
   width: 1000px;
   min-height: calc(3rem + 20px);
   height: calc(20rem + 20px);
-
   line-height: 1.1rem;
-
   border-radius : 6px;
-  
   padding : 10px;
 }
 
@@ -413,11 +400,12 @@ input{
 
 .container > p {
   margin : 0;
-  
   height : 100%;
-  
   overflow: hidden;
-  
+}
+.container > p > em {
+    float: right;
+    text-decoration: underline;
 }
 
 .container::before {
@@ -440,7 +428,7 @@ input{
 .container.opened::before {
   content : "Voir moins";
   align-items : center;
-  margin-bottom : 5px;
+  margin-bottom : -2px;
 }
 .container::after{
     content: "";
@@ -453,48 +441,24 @@ input{
 .container > p > img[src="images/stranger_things_logo.png"]{
     width: 150px;
     height: 150px;
+    shape-outside: margin-box;
     object-fit: cover;
     border-radius: 50%;
     float: left;
-    shape-outside: margin-box;
     margin: 10px 10px 5px 0;
 }
 .container > p > img[src="./images/detaillé/MBB.png"],
 .container > p > img[src="images/detaillé/GM.png"]{
     width: 150px;
     height: 150px;
+    shape-outside: margin-box;
     object-fit: cover;
     border-radius: 50%;
     float: right;
-    shape-outside: margin-box;
     margin: 10px 0 5px 5px;
 }
 /*********************************       Texte voir plus       ********************************************************/
 /*********************************      mid main      *****************************************************************/
-
-.castingbaiser{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 25em;
-    height: 30em;
-    align-content: flex-start;
-    justify-content: space-between;
-}
-.castingbaiser > figure > h4 {
-    text-align: center;
-    font-size:larger;
-}
-.castingbaiser > figure > img {
-    height: auto;
-    width: 20em;
-    border-radius: 10px;
-}
-.castingbaiser > figure > figcaption{
-    float: right;
-    font-size: 15px;
-    margin-right: 5px;
-}
 .midmain{
     display: flex;
     flex-direction: row;
@@ -502,8 +466,34 @@ input{
     padding-bottom : 2em;
     margin-bottom: 2em;
 }
+.castingbaiser{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 25em;
+    height: 30em;
+    justify-content: space-between;
+    
+}
 
-
+.castingbaiser > figure{
+    align-self: center;
+}
+.castingbaiser > figure > h4{
+    margin-bottom: 0.7em ;
+    text-align: center;
+    font-size:larger;
+}
+.castingbaiser > figure > img {
+    height: auto;
+    width: 20em;
+    border-radius: 10px;
+    
+}
+.castingbaiser > figure > figcaption{
+    font-size: 15px;
+    margin-left: 70%;
+}
 /*********************************      fin mid main      *****************************************************************/
 /*********************************      début groupe annecdotes       *****************************************************/
 
@@ -541,7 +531,7 @@ input{
 
 .groupeanecdote > article > .textscrollbar{
     flex-grow: 1;
-    background-color: none;
+    background-color: transparent;
     overflow: auto;
     height: 15em;
     margin-bottom: 15px;
@@ -559,21 +549,21 @@ input{
 
 /*barre de scroll personnalisée*/
 
-#stylescrollbar::-webkit-scrollbar-track
+.textscrollbar::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
 
-#stylescrollbar::-webkit-scrollbar
+.textscrollbar::-webkit-scrollbar
 {
 	width: 12px;
 	background-color: #F5F5F5;
     border-radius: 10px;
 }
 
-#stylescrollbar::-webkit-scrollbar-thumb
+.textscrollbar::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
@@ -593,8 +583,8 @@ input{
     display: flex;
     justify-content: center; /* Centrer horizontalement */
     align-items: center; /* Centrer verticalement */
-    margin: 2em 0;
-    
+    margin-bottom: 2em;
+    margin-top: 4em;
 }
 .listebetisier > ul {
     display: flex;
@@ -864,7 +854,7 @@ button{
 	background-repeat: no-repeat;
 }
 
-.dots {
+.dots2 {
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
@@ -877,11 +867,11 @@ button{
 	justify-content: center;
 }
 
-.dots a {
-	--dots-size: 8px;
+.dots2 a {
+	--dots-size2: 8px;
 
-	width: var(--dots-size);
-	height: var(--dots-size);
+	width: var(--dots-size2);
+	height: var(--dots-size2);
 	border-radius: 50%;
 	background-color: #fff;
 	opacity: 0.75;
@@ -889,7 +879,7 @@ button{
 	cursor: pointer;
 }
 
-.dots a:hover {
+.dots2 a:hover {
 	opacity: 1;
 }
 
@@ -1081,19 +1071,13 @@ ul {
 
 
 /*******************************************************************************************
-*                           media querry page : présentation ge                            *
+*                           media querry page                                              *
 *                                                                                          *
 ********************************************************************************************/
-@media screen {
-    
-}
-/*******************************************************************************************
-*                           media querry page : présentation détaillé                      *
-*                                                                                          *
-********************************************************************************************/
-
 @media (width < 1290px) {
     #section1{
+    #section2{
+        display: flex;
         flex-direction: column;
     }
     #section2{
@@ -1117,15 +1101,111 @@ ul {
     }
 }
 
-
-@media (width < 429px){
-    .casting
+@media (width < 700px) {
+    #section1{
+        flex-direction: column;
+    }
 }
-/*******************************************************************************************
-*                           media querry page : backstage                                  *
-*                                                                                          *
-********************************************************************************************/
-/********************************************************************************************
-*                           media querry page : presentation episode saison                 *
-*                                                                                           *
-*********************************************************************************************/
+
+
+@media (width < 429px) {
+    body{
+        margin: 0.5em;
+        padding: 1em;
+        font-size: smaller;
+    }
+
+    /*************************media BACKSTAGE************************/
+    
+    .slider-wrapper {
+        height: 25vh;
+        margin-bottom: 3em;
+        margin-top: 4em
+    }
+    .slider{
+        --slide-width: clamp(320px, 84vw, 500px);
+        --slide-height: clamp(none, none, none);
+    }
+
+    .slide > img {
+        width: 100%; /* Utilisez la largeur maximale pour s'adapter à la largeur de l'écran */
+        height: auto; /* Ajustez la hauteur en fonction de la largeur pour préserver les proportions */
+    }
+    .dots {
+        bottom: 26px;
+        gap: 35px;
+
+        
+    }
+    
+    .dots a {
+        --dots-size: 15px;
+        background-color: #CF4307;
+    }
+    .dots a:hover {
+        background-color: #fff;
+    }
+
+    .container::before {
+        right : 38%;
+        left: 38%;
+      }
+    
+    .midmain{
+        flex-direction: column; 
+        width: 100%;
+    }
+    .castingbaiser{
+        flex-direction: row;
+        width: 100%;
+        height: 100%; 
+        margin: 1em 0;
+    }
+    
+    .castingbaiser > figure > img {
+        height: 6em;
+        width: auto ;
+    }
+    .castingbaiser > figure > figcaption{
+        font-size: 12px;
+        margin-left: 50%;
+    }
+
+    .container{
+        position : relative;
+        width: 100%;
+    }
+    
+    .container > p > img[src="images/detaillé/NS.png"],
+    .container > p > img[src="./images/detaillé/finnwolfhard.jpg"],
+    .container > p > img[src="images/stranger_things_logo.png"]{
+        width: 50px;
+        height: 50px;
+    }
+    .container > p > img[src="./images/detaillé/MBB.png"],
+    .container > p > img[src="images/detaillé/GM.png"]{
+        width: 50px;
+        height: 50px;
+    }
+    .groupeanecdote > article{
+        margin: 15px 1em;
+        width: 90%;
+    }
+    .groupeanecdote > article > .textscrollbar{
+        height: 13em;
+    }
+    .groupeanecdote > article > .textscrollbar > p{
+        margin: 0 2px 5px 0px;
+    }
+    .textscrollbar::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+    
+    .listebetisier > ul > li {
+        margin: 0 20px; 
+        padding: 1.5em 1em;
+    }
+    /***********************fin media BACKSTAGE**********************/
+}
+}
