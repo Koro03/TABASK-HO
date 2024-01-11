@@ -146,18 +146,18 @@ figure > img{
     height: 3em;
 }
 
-#producteur{
-    width: 15em;
-    height: 11em;
-    padding: 1em;
-    margin-left: -7em;
-    margin-right: 2em;
-    border-radius: 40%;
+
+#fondviolet, #résumé{
+    box-shadow: -5px -5px 10px #63487d, 5px 5px 10px #202020 ;
 }
 
-div > article{
-    box-shadow: -5px -5px 10px #464646, 5px 5px 10px #202020 ;
-} 
+#bande-annonce, #episode{
+    box-shadow: -5px -5px 10px #343e78, 5px 5px 10px #202020;
+}
+
+#critique, .carroussel2{
+    box-shadow: -5px -5px 10px #3f1c76, 5px 5px 10px #202020 ;
+}
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
@@ -249,8 +249,8 @@ input{
     display: inline-block;
 }
 .poster img{
-    height: 330;
-    width: 414;
+    height: 330px;
+    width: 414px;
 }
 .poster{
     font-size: larger;
@@ -660,7 +660,7 @@ input{
 
 #résumé{
     background-color: #5d3d7a;
-    border: 2px solid black;
+    
 }
 
 #colonnedroite{
@@ -747,7 +747,18 @@ video{
     padding: 3em;
 }
 
+.photo_profil{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0.5em;
+}
 
+#etoile{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #episode{
     background-color: #111A4B;
@@ -968,8 +979,8 @@ input{
     display: inline-block;
 }
 .poster img{
-    height: 330;
-    width: 414;
+    height: 330px;
+    width: 414px;
 }
 .poster{
     font-size: larger;
@@ -1078,7 +1089,7 @@ ul {
 *                           media querry page                                              *
 *                                                                                          *
 ********************************************************************************************/
-@media (width < 1290px) {
+@media (width < 1280px) {
     #section2{
         display: flex;
         flex-direction: column;
@@ -1106,19 +1117,22 @@ ul {
         height: 150px;
         width: 150px;
     }
-    #producteur{
-        height: 150px;
-        width: 150px;
-        margin-left: 2em;
-    }
     #info_gen{
         align-items: center;
     }
 }
 
-@media (width < 700px) {
+@media (width < 1100px) {
     #section1{
         flex-direction: column;
+    }
+    .casting{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #casting_img{
+        height: ;
     }
 }
 
@@ -1144,11 +1158,7 @@ ul {
         height: 150px;
         width: 150px;
     }
-    #producteur{
-        height: 150px;
-        width: 150px;
-        margin-left: 4em;
-    }
+
     #info_gen{
         align-items: center;
     }
