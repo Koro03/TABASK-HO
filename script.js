@@ -15,3 +15,4 @@ function toggleDetails(button) {
   details.classList.toggle('initial-hidden');
 }
 
+

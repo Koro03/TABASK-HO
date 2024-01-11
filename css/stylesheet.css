@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom, #212b61, #313068, #40346e, #4f3974, #5d3d7a);
+    background-image: linear-gradient(to bottom, #212b61, #313068,#313068, #2e2068, #4f3974, #5d3d7a);
     margin: 1em;
     padding: 1.5em;
     font-family: Inter, Roboto, sans-serif;
@@ -25,7 +25,7 @@ h1{
     flex-wrap: nowrap;
     width: fit-content;
     text-align: center; 
-    margin-left: 2em;
+    margin-left:60% ;
     background-color: #5d3d7a;
     color: #ffffff;
     border: solid #5d3d7a ;
@@ -48,15 +48,23 @@ nav{
 nav a{
     color: #fff;
     background-color: #CF4307;
-    border: solid #5d3d7a;
     border-radius: 10px;
     padding : 5px;
     margin: 15px;
     width: 15em;
     text-align: center;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #51425e);
+    box-shadow: inset 4.3px 4.3px 7px #b95529;
+    transition: 0.25s;
+}
+nav a:hover{
+    filter: drop-shadow(0px 0px 0px rgb(63, 22, 102));
+    box-shadow:  inset 4.3px 4.3px 7px #7e2b08
+    
 }
 nav img{
     margin: 15px; 
+   
 }
 nav div {
     margin-right: auto;
@@ -96,6 +104,7 @@ article a:hover{
     border:solid #CF4307;
     border-radius: 10px;
     padding: 5px;
+    
 }
 
 article p + img{
@@ -106,15 +115,19 @@ article p + img{
 
 figure > img{
     height: 50px;
+    
 }
 .casting{
     display: inline-flex;
-    width: 40em;
+    align-items: start;
+    justify-content: center;
+    flex-basis: 20em;
     background-color: transparent;
     margin-right:2em;
     margin-left: 7em;
     margin-top: 4em;
     padding: 5em;
+    
     
 }
  
@@ -124,7 +137,10 @@ figure > img{
     padding: 1em;
     margin-right: 3em;
     border-radius: 40%;
-    max-width: 100%; 
+    max-width: 100%;
+    filter: drop-shadow(4px 4px 4px#311f40);
+    
+    
 }
 
 .casting > figure{
@@ -161,14 +177,18 @@ div > article{
     margin-bottom:4em ;
 }
 .presentation img{
-    width: 750px;
+    width:550px;
     height: 50%;
     float: right;
+    
     
 }
 
 .presentation figcaption a{
-    margin: 40%;
+    margin: 35%;
+    border: none;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(42, 14, 68));
+    transition: 0.25s;
   
 }
 
@@ -178,6 +198,7 @@ div > article{
     margin-top: 1em;
     border-radius: 30px;
     width: 100%;
+    
 }
 .mot-cle p{
     background-color: #8f2328;
@@ -186,6 +207,7 @@ div > article{
     border:solid 2px #8f2328;
     width: fit-content;
     height: fit-content;
+    box-shadow: inset 4.3px 4.3px 7px #b72129;
 }
 .mot-cle img{
     display: flex;
@@ -215,6 +237,7 @@ div > article{
 .reward figure{
     display: inline-flex;
     align-items: center;
+    margin: 1em;
 }
 input{
     display: none;
@@ -236,7 +259,6 @@ input{
 .lienEpisode_limite_age{
     display: inline-flex;
     width: fit-content;
-
     margin-right:2em;
     margin-left: 2em ;
     color: #fff;
@@ -264,8 +286,15 @@ input{
     padding-right: 1em;
     display: inline-flex;
     width: 100%;
-    
 
+}
+.lienEpisode_limite_age figcaption a{
+    display: inline;
+    background-color: transparent;
+    border: transparent;
+    width: 5em;
+    flex-wrap: nowrap;
+    
 }
 
 #pageSerieG{
@@ -273,25 +302,15 @@ input{
     margin-right:20% ;
     margin-left: 20%;
 
-
 }
+
+
 /*******************************************************************************************
 *                           main page : backstage                                          *
 *                                                                                          *
 ********************************************************************************************/
 /************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
 /*********************************   Caroussel    ********************************************************/
-
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
 
 .slider-wrapper {
     position: relative;
@@ -340,7 +359,7 @@ input{
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    gap: 10px;
+    gap: 23px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -348,8 +367,7 @@ input{
 }
 
 .dots a {
-    --dots-size: 6px;
-
+    --dots-size: 16px;
     width: var(--dots-size);
     height: var(--dots-size);
     border-radius: 50%;
@@ -357,10 +375,13 @@ input{
     opacity: 0.85;
     transition: opacity ease 200ms;
     cursor: pointer;
+    border: #000 2px solid;
 }
 
 .dots a:hover {
     opacity: 1;
+    background-color: #CF4307;
+    --dots-size: 20px;
 }
 
 /*********************************   fin Caroussel    ********************************************************/
@@ -369,15 +390,11 @@ input{
   
   .container {
   position : relative;
-  
   width: 1000px;
   min-height: calc(3rem + 20px);
   height: calc(20rem + 20px);
-
   line-height: 1.1rem;
-
   border-radius : 6px;
-  
   padding : 10px;
 }
 
@@ -387,11 +404,12 @@ input{
 
 .container > p {
   margin : 0;
-  
   height : 100%;
-  
   overflow: hidden;
-  
+}
+.container > p > em {
+    float: right;
+    text-decoration: underline;
 }
 
 .container::before {
@@ -414,7 +432,7 @@ input{
 .container.opened::before {
   content : "Voir moins";
   align-items : center;
-  margin-bottom : 5px;
+  margin-bottom : -2px;
 }
 .container::after{
     content: "";
@@ -427,48 +445,24 @@ input{
 .container > p > img[src="images/stranger_things_logo.png"]{
     width: 150px;
     height: 150px;
+    shape-outside: margin-box;
     object-fit: cover;
     border-radius: 50%;
     float: left;
-    shape-outside: margin-box;
     margin: 10px 10px 5px 0;
 }
 .container > p > img[src="./images/detaillé/MBB.png"],
 .container > p > img[src="images/detaillé/GM.png"]{
     width: 150px;
     height: 150px;
+    shape-outside: margin-box;
     object-fit: cover;
     border-radius: 50%;
     float: right;
-    shape-outside: margin-box;
     margin: 10px 0 5px 5px;
 }
 /*********************************       Texte voir plus       ********************************************************/
 /*********************************      mid main      *****************************************************************/
-
-.castingbaiser{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 25em;
-    height: 30em;
-    align-content: flex-start;
-    justify-content: space-between;
-}
-.castingbaiser > figure > h4 {
-    text-align: center;
-    font-size:larger;
-}
-.castingbaiser > figure > img {
-    height: auto;
-    width: 20em;
-    border-radius: 10px;
-}
-.castingbaiser > figure > figcaption{
-    float: right;
-    font-size: 15px;
-    margin-right: 5px;
-}
 .midmain{
     display: flex;
     flex-direction: row;
@@ -476,8 +470,34 @@ input{
     padding-bottom : 2em;
     margin-bottom: 2em;
 }
+.castingbaiser{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 25em;
+    height: 30em;
+    justify-content: space-between;
+    
+}
 
-
+.castingbaiser > figure{
+    align-self: center;
+}
+.castingbaiser > figure > h4{
+    margin-bottom: 0.7em ;
+    text-align: center;
+    font-size:larger;
+}
+.castingbaiser > figure > img {
+    height: auto;
+    width: 20em;
+    border-radius: 10px;
+    
+}
+.castingbaiser > figure > figcaption{
+    font-size: 15px;
+    margin-left: 70%;
+}
 /*********************************      fin mid main      *****************************************************************/
 /*********************************      début groupe annecdotes       *****************************************************/
 
@@ -515,7 +535,7 @@ input{
 
 .groupeanecdote > article > .textscrollbar{
     flex-grow: 1;
-    background-color: none;
+    background-color: transparent;
     overflow: auto;
     height: 15em;
     margin-bottom: 15px;
@@ -533,21 +553,21 @@ input{
 
 /*barre de scroll personnalisée*/
 
-#stylescrollbar::-webkit-scrollbar-track
+.textscrollbar::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
 
-#stylescrollbar::-webkit-scrollbar
+.textscrollbar::-webkit-scrollbar
 {
 	width: 12px;
 	background-color: #F5F5F5;
     border-radius: 10px;
 }
 
-#stylescrollbar::-webkit-scrollbar-thumb
+.textscrollbar::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
@@ -567,8 +587,8 @@ input{
     display: flex;
     justify-content: center; /* Centrer horizontalement */
     align-items: center; /* Centrer verticalement */
-    margin: 2em 0;
-    
+    margin-bottom: 2em;
+    margin-top: 4em;
 }
 .listebetisier > ul {
     display: flex;
@@ -839,7 +859,7 @@ button{
 	background-repeat: no-repeat;
 }
 
-.dots {
+.dots2 {
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
@@ -852,11 +872,11 @@ button{
 	justify-content: center;
 }
 
-.dots a {
-	--dots-size: 8px;
+.dots2 a {
+	--dots-size2: 8px;
 
-	width: var(--dots-size);
-	height: var(--dots-size);
+	width: var(--dots-size2);
+	height: var(--dots-size2);
 	border-radius: 50%;
 	background-color: #fff;
 	opacity: 0.75;
@@ -864,7 +884,7 @@ button{
 	cursor: pointer;
 }
 
-.dots a:hover {
+.dots2 a:hover {
 	opacity: 1;
 }
 
@@ -1056,19 +1076,13 @@ ul {
 
 
 /*******************************************************************************************
-*                           media querry page : présentation ge                            *
+*                           media querry page                                              *
 *                                                                                          *
 ********************************************************************************************/
-@media screen {
-    
-}
-/*******************************************************************************************
-*                           media querry page : présentation détaillé                      *
-*                                                                                          *
-********************************************************************************************/
-
 @media (width < 1290px) {
     #section1{
+    #section2{
+        display: flex;
         flex-direction: column;
     }
     #section2{
@@ -1101,6 +1115,12 @@ ul {
     }
     #info_gen{
         align-items: center;
+    }
+}
+
+@media (width < 700px) {
+    #section1{
+        flex-direction: column;
     }
 }
 
