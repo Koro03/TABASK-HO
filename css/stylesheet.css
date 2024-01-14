@@ -660,6 +660,7 @@ input{
 
 #résumé{
     background-color: #5d3d7a;
+    padding: 0.5em;
     
 }
 
@@ -744,14 +745,18 @@ video{
     height: 25em;
     text-align: center;
     margin: 0.5em 3em 7em 3em;
-    padding: 3em;
+    padding: 2em;
+
+}
+strong{
+    font-size: 1.5em;
 }
 
 .photo_profil{
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
 }
 
 #etoile{
@@ -764,7 +769,7 @@ video{
     background-color: #111A4B;
     padding: 2em;
     margin-right: 4em;
-    height: 65em;
+    height: 60em;
     width: 35em;
     border-radius: 0px 20px 0px 20px;
 }
@@ -1132,7 +1137,7 @@ ul {
         align-items: center;
     }
     #casting_img{
-        height: ;
+        height: 150px ;
     }
 }
 
