@@ -47,6 +47,7 @@ nav{
 }
 nav a{
     color: #fff;
+    text-transform: capitalize;
     background-color: #CF4307;
     border-radius: 10px;
     padding : 5px;
@@ -152,7 +153,7 @@ figure > img{
 }
 
 #bande-annonce, #episode{
-    box-shadow: -5px -5px 10px #343e78, 5px 5px 10px #202020;
+    box-shadow: -5px -5px 10px #452271, 5px 5px 10px #202020;
 }
 
 #critique, .carroussel2{
