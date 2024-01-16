@@ -10,9 +10,9 @@ const clicpourvoirplus = (element) => {
 
 
 function toggleDetails(button) {
-    var figure = button.parentNode;
-    var details = figure.querySelectorAll('figcaption:not(:first-child)');
-    details.forEach(function (detail) {
-        detail.classList.toggle('hidden');
-    });
+  var figure = button.parentNode;
+  var details = figure.querySelector('div.hidden');
+  details.classList.toggle('initial-hidden');
 }
+
+

@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom, #212b61, #313068, #40346e, #4f3974, #5d3d7a);
+    background-image: linear-gradient(to bottom, #212b61, #313068,#313068, #2e2068, #4f3974, #5d3d7a);
     margin: 1em;
     padding: 1.5em;
     font-family: Inter, Roboto, sans-serif;
@@ -25,7 +25,7 @@ h1{
     flex-wrap: nowrap;
     width: fit-content;
     text-align: center; 
-    margin-left: 2em;
+    margin-left:60% ;
     background-color: #5d3d7a;
     color: #ffffff;
     border: solid #5d3d7a ;
@@ -48,15 +48,23 @@ nav{
 nav a{
     color: #fff;
     background-color: #CF4307;
-    border: solid #5d3d7a;
     border-radius: 10px;
     padding : 5px;
     margin: 15px;
     width: 15em;
     text-align: center;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #51425e);
+    box-shadow: inset 4.3px 4.3px 7px #b95529;
+    transition: 0.25s;
+}
+nav a:hover{
+    filter: drop-shadow(0px 0px 0px rgb(63, 22, 102));
+    box-shadow:  inset 4.3px 4.3px 7px #7e2b08
+    
 }
 nav img{
     margin: 15px; 
+   
 }
 nav div {
     margin-right: auto;
@@ -96,6 +104,7 @@ article a:hover{
     border:solid #CF4307;
     border-radius: 10px;
     padding: 5px;
+    
 }
 
 article p + img{
@@ -106,37 +115,48 @@ article p + img{
 
 figure > img{
     height: 50px;
+    
 }
 .casting{
     display: inline-flex;
-    width: 40em;
-    background-color: #5d3d7a;
+    align-items: start;
+    justify-content: center;
+    flex-basis: 15em;
     margin-right:2em;
     margin-left: 7em;
-    margin-top: 2em;
+    margin-top: 4em;
+    padding: 1em;
+    
     
 }
-
+ 
 .casting_img{
     width: 9em;
     height: 11em;
     padding: 1em;
     margin-right: 3em;
     border-radius: 40%;
-    max-width: 100%; 
+    max-width: 100%;
+    filter: drop-shadow(4px 4px 4px#311f40);
+    
+    
 }
 
 .casting > figure{
     height: 3em;
 }
 
-#producteur{
-    width: 15em;
-    height: 11em;
-    padding: 1em;
-    margin-left: -7em;
-    margin-right: 2em;
-    border-radius: 40%;
+
+#fondviolet, #résumé{
+    box-shadow: -5px -5px 10px #63487d, 5px 5px 10px #202020 ;
+}
+
+#bande-annonce, #episode{
+    box-shadow: -5px -5px 10px #343e78, 5px 5px 10px #202020;
+}
+
+#critique, .carroussel2{
+    box-shadow: -5px -5px 10px #3f1c76, 5px 5px 10px #202020 ;
 }
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
@@ -156,14 +176,18 @@ figure > img{
     margin-bottom:4em ;
 }
 .presentation img{
-    width: 750px;
+    width:550px;
     height: 50%;
     float: right;
+    
     
 }
 
 .presentation figcaption a{
-    margin: 40%;
+    margin-left:40% ;
+    border: none;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(42, 14, 68));
+    transition: 0.25s;
   
 }
 
@@ -173,6 +197,7 @@ figure > img{
     margin-top: 1em;
     border-radius: 30px;
     width: 100%;
+    
 }
 .mot-cle p{
     background-color: #8f2328;
@@ -181,6 +206,7 @@ figure > img{
     border:solid 2px #8f2328;
     width: fit-content;
     height: fit-content;
+    box-shadow: inset 4.3px 4.3px 7px #b72129;
 }
 .mot-cle img{
     display: flex;
@@ -210,6 +236,7 @@ figure > img{
 .reward figure{
     display: inline-flex;
     align-items: center;
+    margin: 1em;
 }
 input{
     display: none;
@@ -222,8 +249,8 @@ input{
     display: inline-block;
 }
 .poster img{
-    height: 330;
-    width: 414;
+    height: 330px;
+    width: 414px;
 }
 .poster{
     font-size: larger;
@@ -231,7 +258,6 @@ input{
 .lienEpisode_limite_age{
     display: inline-flex;
     width: fit-content;
-
     margin-right:2em;
     margin-left: 2em ;
     color: #fff;
@@ -259,26 +285,31 @@ input{
     padding-right: 1em;
     display: inline-flex;
     width: 100%;
-    
 
 }
+.lienEpisode_limite_age figcaption a{
+    display: inline;
+    background-color: transparent;
+    border: transparent;
+    width: 5em;
+    flex-wrap: nowrap;
+    
+}
+
+#pageSerieG{
+    width: fit-content;
+    margin-right:20% ;
+    margin-left: 20%;
+
+}
+
+
 /*******************************************************************************************
 *                           main page : backstage                                          *
 *                                                                                          *
 ********************************************************************************************/
 /************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
 /*********************************   Caroussel    ********************************************************/
-
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
 
 .slider-wrapper {
     position: relative;
@@ -327,7 +358,7 @@ input{
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    gap: 10px;
+    gap: 23px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -335,8 +366,7 @@ input{
 }
 
 .dots a {
-    --dots-size: 6px;
-
+    --dots-size: 16px;
     width: var(--dots-size);
     height: var(--dots-size);
     border-radius: 50%;
@@ -344,10 +374,13 @@ input{
     opacity: 0.85;
     transition: opacity ease 200ms;
     cursor: pointer;
+    border: #000 2px solid;
 }
 
 .dots a:hover {
     opacity: 1;
+    background-color: #CF4307;
+    --dots-size: 20px;
 }
 
 /*********************************   fin Caroussel    ********************************************************/
@@ -356,15 +389,11 @@ input{
   
   .container {
   position : relative;
-  
   width: 1000px;
   min-height: calc(3rem + 20px);
   height: calc(20rem + 20px);
-
   line-height: 1.1rem;
-
   border-radius : 6px;
-  
   padding : 10px;
 }
 
@@ -374,11 +403,12 @@ input{
 
 .container > p {
   margin : 0;
-  
   height : 100%;
-  
   overflow: hidden;
-  
+}
+.container > p > em {
+    float: right;
+    text-decoration: underline;
 }
 
 .container::before {
@@ -401,7 +431,7 @@ input{
 .container.opened::before {
   content : "Voir moins";
   align-items : center;
-  margin-bottom : 5px;
+  margin-bottom : -2px;
 }
 .container::after{
     content: "";
@@ -414,48 +444,24 @@ input{
 .container > p > img[src="images/stranger_things_logo.png"]{
     width: 150px;
     height: 150px;
+    shape-outside: margin-box;
     object-fit: cover;
     border-radius: 50%;
     float: left;
-    shape-outside: margin-box;
     margin: 10px 10px 5px 0;
 }
 .container > p > img[src="./images/detaillé/MBB.png"],
 .container > p > img[src="images/detaillé/GM.png"]{
     width: 150px;
     height: 150px;
+    shape-outside: margin-box;
     object-fit: cover;
     border-radius: 50%;
     float: right;
-    shape-outside: margin-box;
     margin: 10px 0 5px 5px;
 }
 /*********************************       Texte voir plus       ********************************************************/
 /*********************************      mid main      *****************************************************************/
-
-.castingbaiser{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 25em;
-    height: 30em;
-    align-content: flex-start;
-    justify-content: space-between;
-}
-.castingbaiser > figure > h4 {
-    text-align: center;
-    font-size:larger;
-}
-.castingbaiser > figure > img {
-    height: auto;
-    width: 20em;
-    border-radius: 10px;
-}
-.castingbaiser > figure > figcaption{
-    float: right;
-    font-size: 15px;
-    margin-right: 5px;
-}
 .midmain{
     display: flex;
     flex-direction: row;
@@ -463,8 +469,34 @@ input{
     padding-bottom : 2em;
     margin-bottom: 2em;
 }
+.castingbaiser{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 25em;
+    height: 30em;
+    justify-content: space-between;
+    
+}
 
-
+.castingbaiser > figure{
+    align-self: center;
+}
+.castingbaiser > figure > h4{
+    margin-bottom: 0.7em ;
+    text-align: center;
+    font-size:larger;
+}
+.castingbaiser > figure > img {
+    height: auto;
+    width: 20em;
+    border-radius: 10px;
+    
+}
+.castingbaiser > figure > figcaption{
+    font-size: 15px;
+    margin-left: 70%;
+}
 /*********************************      fin mid main      *****************************************************************/
 /*********************************      début groupe annecdotes       *****************************************************/
 
@@ -502,7 +534,7 @@ input{
 
 .groupeanecdote > article > .textscrollbar{
     flex-grow: 1;
-    background-color: none;
+    background-color: transparent;
     overflow: auto;
     height: 15em;
     margin-bottom: 15px;
@@ -520,21 +552,21 @@ input{
 
 /*barre de scroll personnalisée*/
 
-#stylescrollbar::-webkit-scrollbar-track
+.textscrollbar::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
 
-#stylescrollbar::-webkit-scrollbar
+.textscrollbar::-webkit-scrollbar
 {
 	width: 12px;
 	background-color: #F5F5F5;
     border-radius: 10px;
 }
 
-#stylescrollbar::-webkit-scrollbar-thumb
+.textscrollbar::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
@@ -554,8 +586,8 @@ input{
     display: flex;
     justify-content: center; /* Centrer horizontalement */
     align-items: center; /* Centrer verticalement */
-    margin: 2em 0;
-    
+    margin-bottom: 2em;
+    margin-top: 4em;
 }
 .listebetisier > ul {
     display: flex;
@@ -583,7 +615,7 @@ input{
 #section1{
     background-color: #5d3d7a;
     margin: 15px 15px 3em auto;
-    padding: 2em;
+    padding: 3em;
     display: inline-flex;
     width: 100%;
     border-radius: 0px 20px 0px 20px;
@@ -598,6 +630,7 @@ input{
     display: flex;
     flex-direction: row;
     border-radius: 30px;
+    background-color: transparent;
 }
 
 
@@ -612,7 +645,7 @@ input{
     display: flex;
     flex-direction: column;
     width: 13em;
-    margin: auto auto auto 5em;
+    margin: auto auto 5em;
 
 }
 
@@ -627,7 +660,8 @@ input{
 
 #résumé{
     background-color: #5d3d7a;
-    border: 2px solid black;
+    padding: 0.5em;
+    
 }
 
 #colonnedroite{
@@ -711,16 +745,31 @@ video{
     height: 25em;
     text-align: center;
     margin: 0.5em 3em 7em 3em;
-    padding: 3em;
+    padding: 2em;
+
+}
+strong{
+    font-size: 1.5em;
 }
 
+.photo_profil{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1.5em;
+}
 
+#etoile{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #episode{
     background-color: #111A4B;
     padding: 2em;
     margin-right: 4em;
-    height: 65em;
+    height: 60em;
     width: 35em;
     border-radius: 0px 20px 0px 20px;
 }
@@ -747,14 +796,21 @@ video{
     left: 20em;
 }
 
-.hidden:not(#episode-title) {
-    display: none !important;
+.initial-hidden {
+    display: none;
+    background-color: transparent;
+}
+
+.hidden p{
+    background-color: transparent;
+    border: none;
 }
 
 button{
     background-color:transparent;
     border:none;
 }
+
 #backstage{
     width: fit-content;
 }
@@ -818,7 +874,7 @@ button{
 	background-repeat: no-repeat;
 }
 
-.dots {
+.dots2 {
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
@@ -831,11 +887,11 @@ button{
 	justify-content: center;
 }
 
-.dots a {
-	--dots-size: 8px;
+.dots2 a {
+	--dots-size2: 8px;
 
-	width: var(--dots-size);
-	height: var(--dots-size);
+	width: var(--dots-size2);
+	height: var(--dots-size2);
 	border-radius: 50%;
 	background-color: #fff;
 	opacity: 0.75;
@@ -843,7 +899,7 @@ button{
 	cursor: pointer;
 }
 
-.dots a:hover {
+.dots2 a:hover {
 	opacity: 1;
 }
 
@@ -928,16 +984,13 @@ input{
     display: inline-block;
 }
 .poster img{
-    height: 330;
-    width: 414;
+    height: 330px;
+    width: 414px;
 }
 .poster{
     font-size: larger;
 }
 
-@media screen {
-    /**/
-}
 
 /*Page Présentation_série_saison*/
 .dropdown {
@@ -1038,43 +1091,191 @@ ul {
 
 
 /*******************************************************************************************
-*                           media querry page : présentation ge                            *
+*                           media querry page                                              *
 *                                                                                          *
 ********************************************************************************************/
-@media screen {
-    
-}
-/*******************************************************************************************
-*                           media querry page : présentation détaillé                      *
-*                                                                                          *
-********************************************************************************************/
-@media (width < 700px) {
+@media (width < 1280px) {
     #section2{
-      display: flex;
-      flex-direction: column;
-    }
-}
-
-@media (width < 700px) {
-    #section1{
+        display: flex;
         flex-direction: column;
     }
+    #section2{
+        display: flex;
+        flex-direction: column;
+      }
     .casting{
-        flex-direction: column;
+        display: block;
+        content: "";
+        display: inline-flex;
+        clear: both;
+        margin-left: 0em;
+        
     }
     #colonnedroite{
         flex-direction: column;
     }
     .casting figure {
         margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
-        margin-bottom: 10px;
+        margin-bottom: 10em;
+    }
+    .casting_img{
+        height: 150px;
+        width: 150px;
+    }
+    #info_gen{
+        align-items: center;
     }
 }
-/*******************************************************************************************
-*                           media querry page : backstage                                  *
-*                                                                                          *
-********************************************************************************************/
-/********************************************************************************************
-*                           media querry page : presentation episode saison                 *
-*                                                                                           *
-*********************************************************************************************/
+
+@media (width < 1100px) {
+    #section1{
+        flex-direction: column;
+    }
+    .casting{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #casting_img{
+        height: 150px ;
+    }
+}
+
+
+@media (width < 429px){
+    .casting{
+        display: block;
+        content: "";
+        flex-direction: row;
+        clear: both;
+        width: 17em;
+        justify-content: center;
+        
+    }
+    #colonnedroite{
+        flex-direction: column;
+    }
+    .casting figure {
+        margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
+        margin-bottom: 10em;
+    }
+    .casting_img{
+        height: 150px;
+        width: 150px;
+    }
+
+    #info_gen{
+        align-items: center;
+    }
+    .castingbaiser{
+        flex-direction: row;
+        width: 100%;
+        height: 100%; 
+        margin: 1em 0;
+    }
+    
+    .castingbaiser > figure > img {
+        height: 6em;
+        width: auto ;
+    }
+    .castingbaiser > figure > figcaption{
+        font-size: 12px;
+        margin-left: 50%;
+    }
+
+    .container{
+        position : relative;
+        width: 100%;
+    }
+    
+    .container > p > img[src="images/detaillé/NS.png"],
+    .container > p > img[src="./images/detaillé/finnwolfhard.jpg"],
+    .container > p > img[src="images/stranger_things_logo.png"]{
+        width: 50px;
+        height: 50px;
+    }
+    .container > p > img[src="./images/detaillé/MBB.png"],
+    .container > p > img[src="images/detaillé/GM.png"]{
+        width: 50px;
+        height: 50px;
+    }
+    .groupeanecdote > article{
+        margin: 15px 1em;
+        width: 90%;
+    }
+    .groupeanecdote > article > .textscrollbar{
+        height: 13em;
+    }
+    .groupeanecdote > article > .textscrollbar > p{
+        margin: 0 2px 5px 0px;
+    }
+    .textscrollbar::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+    
+    .listebetisier > ul > li {
+        margin: 0 20px; 
+        padding: 1.5em 1em;
+    }
+    /***********************fin media BACKSTAGE**********************/
+
+    /***********************media page accueil***********************/
+     
+    .presentation{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .presentation p{
+        margin: 1em;
+    }
+    .presentation img{
+        width: 90%;
+        height: 80%;
+        
+    }
+    .presentation figure{
+        padding-right:2.5em ;
+    }
+    .presentation figcaption a{
+        width: fit-content;
+        height: fit-content;
+        margin-left: 39%;
+        
+    }
+    .limite_motcle{
+        margin-top: 2em;
+        flex-wrap: wrap-reverse;
+    }
+    .limite_motcle figure + img {
+        margin-left:35% ;
+    }
+    .limite_motcle figure {
+        margin-right:20% ;
+        
+    }
+    .lienEpisode_limite_age{
+        margin-left: 0;
+    }
+    #pageSerieG{
+        flex-wrap: wrap;
+        margin: 1em;
+        padding-left:1em;
+
+    }
+    #pageSerieG img{
+        margin: 1em;
+    }
+    /**********************header*************************/
+
+
+
+    /*******************************************************************************************
+    *                           media querry page : backstage                                  *
+    *                                                                                          *
+    ********************************************************************************************/
+    /********************************************************************************************
+    *                           media querry page : presentation episode saison                 *
+    *                                                                                           *
+    *********************************************************************************************/
+}
