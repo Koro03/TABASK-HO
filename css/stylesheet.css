@@ -1125,6 +1125,9 @@ ul {
     #info_gen{
         align-items: center;
     }
+    #résumé{
+        margin-right: 2em;
+    }
 }
 
 @media (width < 1100px) {
@@ -1141,8 +1144,10 @@ ul {
     }
 }
 
+/** media 429 px*/
 
-@media (width < 429px){
+@media (width < 485px){
+    /**page détaillé*/
     .casting{
         display: block;
         content: "";
@@ -1167,6 +1172,28 @@ ul {
     #info_gen{
         align-items: center;
     }
+    #bande-annonce{
+        height: 18em;
+        width: 20em;
+
+    }
+    video{
+        height: 20em;
+        width: 15em;
+    }
+    .carroussel2{
+        padding: 10px;
+        width: 25em;
+        height: 10em;
+        margin-top: 1em;
+    }
+    .slider2{
+        --slide-width: clamp(320px, 75vw, 500px);
+	    --slide-height: clamp(240px, 75vh, 200px);
+    }
+
+    /**fin page detaillé*/
+
     .castingbaiser{
         flex-direction: row;
         width: 100%;
