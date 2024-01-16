@@ -115,14 +115,17 @@ article p + img{
 
 figure > img{
     height: 50px;
+    
 }
 .casting{
     display: inline-flex;
-    width: 40em;
-    background-color: #5d3d7a;
+    align-items: start;
+    justify-content: center;
+    flex-basis: 15em;
     margin-right:2em;
     margin-left: 7em;
-    margin-top: 2em;
+    margin-top: 4em;
+    padding: 1em;
     
     
 }
@@ -143,18 +146,18 @@ figure > img{
     height: 3em;
 }
 
-#producteur{
-    width: 15em;
-    height: 11em;
-    padding: 1em;
-    margin-left: -7em;
-    margin-right: 2em;
-    border-radius: 40%;
+
+#fondviolet, #résumé{
+    box-shadow: -5px -5px 10px #63487d, 5px 5px 10px #202020 ;
 }
 
-div > article{
-    box-shadow: -5px -5px 10px #464646, 5px 5px 10px #202020 ;
-} 
+#bande-annonce, #episode{
+    box-shadow: -5px -5px 10px #343e78, 5px 5px 10px #202020;
+}
+
+#critique, .carroussel2{
+    box-shadow: -5px -5px 10px #3f1c76, 5px 5px 10px #202020 ;
+}
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
@@ -246,8 +249,8 @@ input{
     display: inline-block;
 }
 .poster img{
-    height: 330;
-    width: 414;
+    height: 330px;
+    width: 414px;
 }
 .poster{
     font-size: larger;
@@ -612,7 +615,7 @@ input{
 #section1{
     background-color: #5d3d7a;
     margin: 15px 15px 3em auto;
-    padding: 2em;
+    padding: 3em;
     display: inline-flex;
     width: 100%;
     border-radius: 0px 20px 0px 20px;
@@ -627,6 +630,7 @@ input{
     display: flex;
     flex-direction: row;
     border-radius: 30px;
+    background-color: transparent;
 }
 
 
@@ -641,7 +645,7 @@ input{
     display: flex;
     flex-direction: column;
     width: 13em;
-    margin: auto auto auto 5em;
+    margin: auto auto 5em;
 
 }
 
@@ -656,7 +660,8 @@ input{
 
 #résumé{
     background-color: #5d3d7a;
-    border: 2px solid black;
+    padding: 0.5em;
+    
 }
 
 #colonnedroite{
@@ -740,16 +745,31 @@ video{
     height: 25em;
     text-align: center;
     margin: 0.5em 3em 7em 3em;
-    padding: 3em;
+    padding: 2em;
+
+}
+strong{
+    font-size: 1.5em;
 }
 
+.photo_profil{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1.5em;
+}
 
+#etoile{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #episode{
     background-color: #111A4B;
     padding: 2em;
     margin-right: 4em;
-    height: 65em;
+    height: 60em;
     width: 35em;
     border-radius: 0px 20px 0px 20px;
 }
@@ -964,8 +984,8 @@ input{
     display: inline-block;
 }
 .poster img{
-    height: 330;
-    width: 414;
+    height: 330px;
+    width: 414px;
 }
 .poster{
     font-size: larger;
@@ -1074,8 +1094,7 @@ ul {
 *                           media querry page                                              *
 *                                                                                          *
 ********************************************************************************************/
-@media (width < 1290px) {
-    #section1{
+@media (width < 1280px) {
     #section2{
         display: flex;
         flex-direction: column;
@@ -1085,75 +1104,68 @@ ul {
         flex-direction: column;
       }
     .casting{
-        flex-direction: column;
-        height: 60em;
+        display: block;
+        content: "";
+        display: inline-flex;
+        clear: both;
+        margin-left: 0em;
+        
     }
     #colonnedroite{
         flex-direction: column;
     }
     .casting figure {
         margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
-        margin-bottom: 50px;
+        margin-bottom: 10em;
     }
     .casting_img{
-        height: 100px;
+        height: 150px;
         width: 150px;
+    }
+    #info_gen{
+        align-items: center;
     }
 }
 
-@media (width < 700px) {
+@media (width < 1100px) {
     #section1{
         flex-direction: column;
     }
+    .casting{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #casting_img{
+        height: 150px ;
+    }
 }
 
 
-@media (width < 429px) {
-    body{
-        margin: 0.5em;
-        padding: 1em;
-        font-size: smaller;
-    }
-
-    /*************************media BACKSTAGE************************/
-    
-    .slider-wrapper {
-        height: 25vh;
-        margin-bottom: 3em;
-        margin-top: 4em
-    }
-    .slider{
-        --slide-width: clamp(320px, 84vw, 500px);
-        --slide-height: clamp(none, none, none);
-    }
-
-    .slide > img {
-        width: 100%; /* Utilisez la largeur maximale pour s'adapter à la largeur de l'écran */
-        height: auto; /* Ajustez la hauteur en fonction de la largeur pour préserver les proportions */
-    }
-    .dots {
-        bottom: 26px;
-        gap: 35px;
-
+@media (width < 429px){
+    .casting{
+        display: block;
+        content: "";
+        flex-direction: row;
+        clear: both;
+        width: 17em;
+        justify-content: center;
         
     }
-    
-    .dots a {
-        --dots-size: 15px;
-        background-color: #CF4307;
+    #colonnedroite{
+        flex-direction: column;
     }
-    .dots a:hover {
-        background-color: #fff;
+    .casting figure {
+        margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
+        margin-bottom: 10em;
+    }
+    .casting_img{
+        height: 150px;
+        width: 150px;
     }
 
-    .container::before {
-        right : 38%;
-        left: 38%;
-      }
-    
-    .midmain{
-        flex-direction: column; 
-        width: 100%;
+    #info_gen{
+        align-items: center;
     }
     .castingbaiser{
         flex-direction: row;
@@ -1209,7 +1221,7 @@ ul {
     /***********************fin media BACKSTAGE**********************/
 
     /***********************media page accueil***********************/
-    
+     
     .presentation{
         display: flex;
         flex-wrap: wrap;
@@ -1254,8 +1266,16 @@ ul {
     #pageSerieG img{
         margin: 1em;
     }
-    
+    /**********************header*************************/
 
 
-}
+
+    /*******************************************************************************************
+    *                           media querry page : backstage                                  *
+    *                                                                                          *
+    ********************************************************************************************/
+    /********************************************************************************************
+    *                           media querry page : presentation episode saison                 *
+    *                                                                                           *
+    *********************************************************************************************/
 }
