@@ -181,7 +181,7 @@ div > article{
 }
 
 .presentation figcaption a{
-    margin: 35%;
+    margin-left:40% ;
     border: none;
     filter: drop-shadow(3.4px 3.4px 3.4px rgb(42, 14, 68));
     transition: 0.25s;
@@ -1207,5 +1207,55 @@ ul {
         padding: 1.5em 1em;
     }
     /***********************fin media BACKSTAGE**********************/
+
+    /***********************media page accueil***********************/
+    
+    .presentation{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .presentation p{
+        margin: 1em;
+    }
+    .presentation img{
+        width: 90%;
+        height: 80%;
+        
+    }
+    .presentation figure{
+        padding-right:2.5em ;
+    }
+    .presentation figcaption a{
+        width: fit-content;
+        height: fit-content;
+        margin-left: 39%;
+        
+    }
+    .limite_motcle{
+        margin-top: 2em;
+        flex-wrap: wrap-reverse;
+    }
+    .limite_motcle figure + img {
+        margin-left:35% ;
+    }
+    .limite_motcle figure {
+        margin-right:20% ;
+        
+    }
+    .lienEpisode_limite_age{
+        margin-left: 0;
+    }
+    #pageSerieG{
+        flex-wrap: wrap;
+        margin: 1em;
+        padding-left:1em;
+
+    }
+    #pageSerieG img{
+        margin: 1em;
+    }
+    
+
+
 }
 }
