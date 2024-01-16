@@ -984,7 +984,7 @@ ul {
 }
 .play{
     position: absolute;
-    z-index: 2;
+    z-index: 99;
     top: 165px;
     left: 90px;
     height: 52px;
