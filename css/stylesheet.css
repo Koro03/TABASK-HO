@@ -1178,18 +1178,21 @@ ul {
 
     }
     video{
-        height: 20em;
+        height: 30em;
         width: 15em;
     }
     .carroussel2{
         padding: 10px;
         width: 25em;
-        height: 10em;
+        height: 20em;
         margin-top: 1em;
     }
     .slider2{
         --slide-width: clamp(320px, 75vw, 500px);
 	    --slide-height: clamp(240px, 75vh, 200px);
+    }
+    #critique{
+        margin-left: 0.5em;
     }
 
     /**fin page detaillé*/
