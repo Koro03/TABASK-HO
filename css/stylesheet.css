@@ -618,7 +618,7 @@ input{
 #section1{
     background-color: #5d3d7a;
     margin: 15px 15px 3em auto;
-    padding: 3em;
+    padding: 3em 1em 1em 1em;
     display: inline-flex;
     width: 100%;
     border-radius: 0px 20px 0px 20px;
@@ -1120,6 +1120,7 @@ ul {
     .casting figure {
         margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
         margin-bottom: 10em;
+        
     }
     .casting_img{
         height: 150px;
@@ -1194,7 +1195,6 @@ ul {
         content: "";
         flex-direction: column;
         clear: both;
-        width: 17em;
         justify-content: center;
         align-items: center;
         
@@ -1215,18 +1215,19 @@ ul {
     }
     #bande-annonce{
         height: 18em;
-        width: 20em;
-
+        width: 30em;
+        margin-right: 1em;
     }
     video{
         height: 30em;
-        width: 15em;
+        width: 23em;
     }
     .carroussel2{
         padding: 10px;
-        width: 25em;
-        height: 20em;
-        margin-top: 1em;
+        width: 30em;
+        height: 25em;
+        margin-top: 1em ;
+        margin-bottom: 20px;
     }
     .slider2{
         --slide-width: clamp(320px, 75vw, 500px);
@@ -1234,6 +1235,9 @@ ul {
     }
     #critique{
         margin-left: 0.5em;
+    }
+    #episode{
+        width: 30em;
     }
 
     /**fin page detaillé*/
@@ -1414,3 +1418,6 @@ ul {
     *                                                                                           *
     *********************************************************************************************/
 }
+
+
+
