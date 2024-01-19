@@ -1419,6 +1419,9 @@ ul {
 }
 
 @media (width < 430px) {
+    #résumé{
+        width: 10em;
+    }
     #bande-annonce{
         height: 15em;
         width: 22em;
@@ -1436,7 +1439,7 @@ ul {
     }
     .slider2{
         --slide-width: clamp(250px, 75vw, 400px);
-	    --slide-height: clamp(240px, 50vh, 200px);
+	    --slide-height: clamp(240px, 50vh, 100px);
     }
     #critique{
         margin-left: 0.5em;
