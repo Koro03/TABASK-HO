@@ -701,7 +701,7 @@ input{
 .Colonne1{
     display: flex;
     flex-direction: column;
-    flex-grow: -2;
+    flex-grow: 0;
     width:30em;
     margin-bottom: 5em;
     border-radius: 0px 20px 0px 20px;
@@ -784,6 +784,7 @@ strong{
     flex-direction: row;
     margin :10px;
     align-items: center;
+
 }
 .ep > figcaption{
     width: fit-content;
@@ -856,7 +857,7 @@ button{
 	scroll-snap-type: x mandatory;
 	max-width: var(--slide-width);
 	border: 5px solid #fff;
-	box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+	box-shadow: 0 2px 15px rgba(#000000, 0.2), 0 2px 20px rgba(#000, 0.25);
 	overflow-y: hidden;
 	overflow-x: auto;
 	scroll-behavior: smooth;
@@ -1133,6 +1134,7 @@ ul {
 }
 
 @media (width < 1100px) {
+    /**********page detaillé******/
     #section1{
         flex-direction: column;
     }
@@ -1143,6 +1145,13 @@ ul {
     }
     #casting_img{
         height: 150px ;
+    }
+    .casting > figure{
+        display: inline-flex;
+        height: 10em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
     }
 
     header nav a{
