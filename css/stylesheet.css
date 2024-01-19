@@ -1419,8 +1419,12 @@ ul {
 }
 
 @media (width < 430px) {
+    #colonnedroite{
+        margin-left: 0;
+    }
     #résumé{
-        width: 10em;
+        width: 19em;
+        
     }
     #bande-annonce{
         height: 15em;
