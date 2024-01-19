@@ -1422,15 +1422,20 @@ ul {
     body{
         padding: 0;
     }
+    header nav{
+        margin-left: 7px;
+    }
     #section1{
         padding: 0;
-        margin: auto;
+        margin: 10px 0 20px 0;
+        width: 105%;
     }
     #colonnedroite{
         margin-left: 0;
     }
     #résumé{
-        width: 19em;
+        width: 23em;
+        margin-left: 1em;
     }
     #bande-annonce{
         height: 15em;
@@ -1456,12 +1461,17 @@ ul {
     }
     #episode{
         width: 22em;
+        
     }
     #fondviolet{
-        width: 23.7em;
-        margin-right: 2px;
+        width: 25em;
+        margin-left: 0  ;
         position: relative;
         left: 0em;
+    }
+    #episode > p{
+        position: relative;
+        left: 0;
     }
 }
 
