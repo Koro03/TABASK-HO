@@ -301,9 +301,14 @@ input{
 
 #pageSerieG{
     width: fit-content;
-    margin-right:20% ;
     margin-left: 20%;
 
+}
+.oscar_trophe{
+    display: inline-flex;
+}
+.oscar{
+    margin-left: 8em;
 }
 
 
@@ -966,11 +971,13 @@ footer figure + img{
     background-color: #2F3D8A;
     padding: 1em;
     margin:1em;
+    margin-right: 3em;
     border: solid #2F3D8A;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 800px;
+
     
 }
 .reward figure{
@@ -1158,7 +1165,9 @@ ul {
 
     header nav a{
         width: 5em;
-
+    }
+    .presentation img{
+        width: 100%;
     }
 
     /*******************page serie G***********/
@@ -1176,7 +1185,18 @@ ul {
     
 
 }
-@media (width < 700px) {
+
+@media (width < 850px) {
+    #pageSerieG img{
+        width: 7em ; 
+        height: 8em;
+    }
+    h1{
+        margin-left: 20%;
+    }
+}
+
+@media (width < 710px) {
     .casting > figure{
         flex-direction: column;
         height: 10em;
@@ -1184,6 +1204,19 @@ ul {
         align-items: center;
         margin-bottom: 3em;
     }
+
+    #pageSerieG{
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: 1em;
+        margin-left: 10em;
+        padding-left:1em;
+        width: 45%;
+
+    }
+    
+
+
 }
 
 /** media 429 px*/
@@ -1336,6 +1369,7 @@ ul {
         flex-wrap: wrap;
         margin: 1em;
         padding-left:1em;
+        width: 80%;
 
     }
     #pageSerieG img{
@@ -1380,7 +1414,6 @@ ul {
     }
     #pageSerieG img{
         margin: 0;
-        width: 47%;
     }
 
     /*********************footer*************************/
