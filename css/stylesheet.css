@@ -1196,8 +1196,7 @@ ul {
         flex-direction: column;
         clear: both;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center; 
     }
     #colonnedroite{
         flex-direction: column;
@@ -1419,5 +1418,37 @@ ul {
     *********************************************************************************************/
 }
 
-
+@media (width < 430px) {
+    #bande-annonce{
+        height: 15em;
+        width: 22em;
+        
+    }
+    video{
+        height: 20em;
+        width: 18em;
+    }
+    .carroussel2{
+        width: 20em;
+        height: 20em;
+        
+        
+    }
+    .slider2{
+        --slide-width: clamp(250px, 75vw, 400px);
+	    --slide-height: clamp(240px, 50vh, 200px);
+    }
+    #critique{
+        margin-left: 0.5em;
+    }
+    #episode{
+        width: 30em;
+    }
+    #fondviolet{
+        width: 20.6em;
+        margin-right: 2px;
+        position: relative;
+        right: 5.9em;
+    }
+}
 
