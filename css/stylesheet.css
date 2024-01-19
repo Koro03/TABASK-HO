@@ -1419,17 +1419,22 @@ ul {
 }
 
 @media (width < 430px) {
+    body{
+        padding: 0;
+    }
+    #section1{
+        padding: 0;
+        margin: auto;
+    }
     #colonnedroite{
         margin-left: 0;
     }
     #résumé{
         width: 19em;
-        
     }
     #bande-annonce{
         height: 15em;
         width: 22em;
-        
     }
     video{
         height: 20em;
@@ -1447,15 +1452,16 @@ ul {
     }
     #critique{
         margin-left: 0.5em;
+        width: 22em;
     }
     #episode{
-        width: 30em;
+        width: 22em;
     }
     #fondviolet{
-        width: 20.6em;
+        width: 23.7em;
         margin-right: 2px;
         position: relative;
-        right: 5.9em;
+        left: 0em;
     }
 }
 
