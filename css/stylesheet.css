@@ -1472,35 +1472,43 @@ ul {
     }
     #bande-annonce{
         height: 15em;
-        width: 22em;
+        width: 23em;
     }
     video{
         height: 20em;
         width: 18em;
     }
     .carroussel2{
-        width: 20em;
-        height: 20em;
-        
-        
+        width: 23em;
+        height: 22em;
     }
     .slider2{
         --slide-width: clamp(250px, 75vw, 400px);
 	    --slide-height: clamp(240px, 50vh, 100px);
     }
+    .slider-wrapper2{
+        height: 300px;
+    }
+    .dots2{
+        position: absolute;
+        bottom: 0px;
+    }
     #critique{
-        margin-left: 0.5em;
-        width: 22em;
+        margin-left: -1em;
+        width: 23em;
     }
     #episode{
-        width: 22em;
+        width: 23em;
         margin-right: 1em;
+        margin-left: -1em;
     }
     #fondviolet{
         width: 25em;
         margin-left: 0  ;
         position: relative;
         left: 0em;
+        box-shadow: none;
+
     }
     #episode > p{
         position: relative;
