@@ -1155,7 +1155,6 @@ ul {
     }
     #casting_img{
         height: 150px ;
-<<<<<<< HEAD
         margin-right: 1em;
     }
     .casting > figure{
@@ -1211,8 +1210,6 @@ ul {
     }
     h1{
         margin-left: 20%;
-=======
->>>>>>> 863789a739ff18fa68ac900dac60d6b4f72e5e38
     }
     .oscar_trophe{
         flex-direction: column;
@@ -1232,7 +1229,6 @@ ul {
     
 }
 
-<<<<<<< HEAD
 @media (width < 710px) {
     .casting > figure{
         flex-direction: column;
@@ -1274,10 +1270,6 @@ ul {
 
 @media (width < 610px){
     /**page détaillé*/
-=======
- 
-@media (width < 429px){
->>>>>>> 863789a739ff18fa68ac900dac60d6b4f72e5e38
     .casting{
         display: flex;
         content: "";
