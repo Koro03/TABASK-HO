@@ -318,7 +318,9 @@ input{
 ********************************************************************************************/
 /************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
 /*********************************   Caroussel    ********************************************************/
-
+.carrousel > h1 {
+    margin: 0 28%
+}
 .slider-wrapper {
     position: relative;
     display: flex; /* Utilisation de flexbox pour centrer le contenu */
@@ -1174,6 +1176,7 @@ ul {
     #pageSerieG{
         display: inline;
         margin: 10%;
+        margin-left: 20%;
         flex-wrap: nowrap;
         margin-top: 5em;
 
@@ -1181,6 +1184,17 @@ ul {
     #pageSerieG img{
         margin: 0;
 
+    }
+    .oscar p{
+        display: flex;
+        height: 250px;
+        background-color: #000;
+    }
+    .oscar{
+        margin: 5%;
+    }
+    .reward{
+        width: 50em;
     }
     
 
@@ -1191,9 +1205,28 @@ ul {
         width: 7em ; 
         height: 8em;
     }
+    #pageSerieG{
+        margin: 5%;
+    }
     h1{
         margin-left: 20%;
     }
+    .oscar_trophe{
+        flex-direction: column;
+    }
+    .reward{
+        width: fit-content;
+        margin-left: 0;
+        padding: 0;
+    }
+    .oscar{
+        margin: 0;
+        width: fit-content;
+    }
+    .presentation{
+        display: block;
+    }
+    
 }
 
 @media (width < 710px) {
@@ -1207,13 +1240,27 @@ ul {
 
     #pageSerieG{
         display: inline-flex;
-        flex-wrap: wrap;
         margin: 1em;
-        margin-left: 10em;
+        margin-left: 10%;
         padding-left:1em;
         width: 45%;
 
     }
+    h1{
+        margin-left:2em ;
+        padding-left:2% ;
+        padding-right:2% ;
+    }
+    .lienEpisode_limite_age figure + img{
+        width: 32px;
+        height: 32px;
+    }
+    .lienEpisode_limite_age figure > img{
+        width: 32px;
+        height: 32px;
+    }
+
+
     
 
 
@@ -1273,6 +1320,8 @@ ul {
     }
 
     /**fin page detaillé*/
+    /***********************debut media BACKSTAGE**********************/
+
 
     .castingbaiser{
         flex-direction: row;
@@ -1280,7 +1329,7 @@ ul {
         height: 100%; 
         margin: 1em 0;
     }
-    
+
     .castingbaiser > figure > img {
         height: 6em;
         width: auto ;
@@ -1294,7 +1343,7 @@ ul {
         position : relative;
         width: 100%;
     }
-    
+
     .container > p > img[src="images/detaillé/NS.png"],
     .container > p > img[src="./images/detaillé/finnwolfhard.jpg"],
     .container > p > img[src="images/stranger_things_logo.png"]{
@@ -1320,7 +1369,7 @@ ul {
     {
         width: 5px;
     }
-    
+
     .listebetisier > ul > li {
         margin: 0 20px; 
         padding: 1.5em 1em;
@@ -1366,6 +1415,7 @@ ul {
     }
     #pageSerieG{
         display: inline-flex;
+        flex-direction: row;
         flex-wrap: wrap;
         margin: 1em;
         padding-left:1em;
