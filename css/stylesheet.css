@@ -318,7 +318,9 @@ input{
 ********************************************************************************************/
 /************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
 /*********************************   Caroussel    ********************************************************/
-
+.carrousel > h1 {
+    margin: 0 28%
+}
 .slider-wrapper {
     position: relative;
     display: flex; /* Utilisation de flexbox pour centrer le contenu */
@@ -1153,6 +1155,7 @@ ul {
     }
     #casting_img{
         height: 150px ;
+<<<<<<< HEAD
         margin-right: 1em;
     }
     .casting > figure{
@@ -1208,6 +1211,8 @@ ul {
     }
     h1{
         margin-left: 20%;
+=======
+>>>>>>> 863789a739ff18fa68ac900dac60d6b4f72e5e38
     }
     .oscar_trophe{
         flex-direction: column;
@@ -1227,6 +1232,7 @@ ul {
     
 }
 
+<<<<<<< HEAD
 @media (width < 710px) {
     .casting > figure{
         flex-direction: column;
@@ -1268,6 +1274,10 @@ ul {
 
 @media (width < 610px){
     /**page détaillé*/
+=======
+ 
+@media (width < 429px){
+>>>>>>> 863789a739ff18fa68ac900dac60d6b4f72e5e38
     .casting{
         display: flex;
         content: "";
@@ -1318,6 +1328,8 @@ ul {
     }
 
     /**fin page detaillé*/
+    /***********************debut media BACKSTAGE**********************/
+
 
     .castingbaiser{
         flex-direction: row;
@@ -1325,7 +1337,7 @@ ul {
         height: 100%; 
         margin: 1em 0;
     }
-    
+
     .castingbaiser > figure > img {
         height: 6em;
         width: auto ;
@@ -1339,7 +1351,7 @@ ul {
         position : relative;
         width: 100%;
     }
-    
+
     .container > p > img[src="images/detaillé/NS.png"],
     .container > p > img[src="./images/detaillé/finnwolfhard.jpg"],
     .container > p > img[src="images/stranger_things_logo.png"]{
@@ -1365,7 +1377,7 @@ ul {
     {
         width: 5px;
     }
-    
+
     .listebetisier > ul > li {
         margin: 0 20px; 
         padding: 1.5em 1em;
@@ -1501,46 +1513,73 @@ ul {
     body{
         padding: 0;
     }
+    header nav{
+        margin-left: 7px;
+    }
     #section1{
         padding: 0;
-        margin: auto;
+        margin: 10px 0 20px 0;
+        width: 105%;
+    }
+    #info_gen{
+        margin-top: 1em;
     }
     #colonnedroite{
         margin-left: 0;
     }
+    .Colonne1{
+        margin-bottom: 1em;
+    }
     #résumé{
-        width: 19em;
+        width: 22em;
+        margin-left: 1em;
+        
     }
     #bande-annonce{
         height: 15em;
-        width: 22em;
+        width: 23em;
+        margin-bottom: 1em;
     }
     video{
         height: 20em;
         width: 18em;
     }
     .carroussel2{
-        width: 20em;
-        height: 20em;
-        
-        
+        width: 23em;
+        height: 22em;
     }
     .slider2{
         --slide-width: clamp(250px, 75vw, 400px);
 	    --slide-height: clamp(240px, 50vh, 100px);
     }
+    .slider-wrapper2{
+        height: 300px;
+    }
+    .dots2{
+        position: absolute;
+        bottom: 0px;
+    }
     #critique{
-        margin-left: 0.5em;
-        width: 22em;
+        margin-left: -1em;
+        width: 23em;
+        margin-bottom: 2em;
     }
     #episode{
-        width: 22em;
+        width: 23em;
+        margin-right: 1em;
+        margin-left: -1em;
     }
     #fondviolet{
-        width: 23.7em;
-        margin-right: 2px;
+        width: 25em;
+        margin-left: 0  ;
         position: relative;
         left: 0em;
+        box-shadow: none;
+
+    }
+    #episode > p{
+        position: relative;
+        left: 0;
     }
 }
 
