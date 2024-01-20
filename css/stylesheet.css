@@ -171,7 +171,7 @@ figure > img{
     align-items: center;
 }
 .presentation p{
-    width: 35em;
+    width: 100%;
     height: fit-content;
     display: flex;
     padding: 2em;
@@ -308,7 +308,18 @@ input{
     display: inline-flex;
 }
 .oscar{
-    margin-left: 8em;
+    margin-left: 5%;
+    width: 80%;
+    
+    
+}
+.oscar img{
+    width: 80%;
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+
 }
 
 
@@ -1186,15 +1197,16 @@ ul {
 
     }
     .oscar p{
-        display: flex;
-        height: 250px;
-        background-color: #000;
+        width: 80%;
+
+        background-color: #2e2068;
     }
     .oscar{
-        margin: 5%;
+        width: 50%;
+        margin-left: 5%;
     }
     .reward{
-        width: 50em;
+        width: 40%;
     }
     
 
