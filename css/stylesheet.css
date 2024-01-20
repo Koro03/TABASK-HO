@@ -1463,6 +1463,9 @@ ul {
         margin: 10px 0 20px 0;
         width: 105%;
     }
+    #info_gen{
+        margin-top: 1em;
+    }
     #colonnedroite{
         margin-left: 0;
     }
