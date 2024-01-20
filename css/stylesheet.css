@@ -1469,6 +1469,9 @@ ul {
     #colonnedroite{
         margin-left: 0;
     }
+    .Colonne1{
+        margin-bottom: 1em;
+    }
     #résumé{
         width: 23em;
         margin-left: 1em;
@@ -1476,6 +1479,7 @@ ul {
     #bande-annonce{
         height: 15em;
         width: 23em;
+        margin-bottom: 1em;
     }
     video{
         height: 20em;
@@ -1499,6 +1503,7 @@ ul {
     #critique{
         margin-left: -1em;
         width: 23em;
+        margin-bottom: 2em;
     }
     #episode{
         width: 23em;
