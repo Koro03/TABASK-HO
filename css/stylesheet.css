@@ -318,7 +318,9 @@ input{
 ********************************************************************************************/
 /************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
 /*********************************   Caroussel    ********************************************************/
-
+.carrousel > h1 {
+    margin: 0 28%
+}
 .slider-wrapper {
     position: relative;
     display: flex; /* Utilisation de flexbox pour centrer le contenu */
@@ -1153,76 +1155,11 @@ ul {
     }
     #casting_img{
         height: 150px ;
-        margin-right: 1em;
-    }
-    .casting > figure{
-        display: inline-flex;
-        height: 10em;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3em;
-    }
-
-    header nav a{
-        width: 5em;
-    }
-    .presentation img{
-        width: 100%;
-    }
-
-    /*******************page serie G***********/
-    #pageSerieG{
-        display: inline;
-        margin: 10%;
-        flex-wrap: nowrap;
-        margin-top: 5em;
-
-    }
-    #pageSerieG img{
-        margin: 0;
-
-    }
-    
-
-}
-
-@media (width < 850px) {
-    #pageSerieG img{
-        width: 7em ; 
-        height: 8em;
-    }
-    h1{
-        margin-left: 20%;
     }
 }
 
-@media (width < 710px) {
-    .casting > figure{
-        flex-direction: column;
-        height: 10em;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3em;
-    }
-
-    #pageSerieG{
-        display: inline-flex;
-        flex-wrap: wrap;
-        margin: 1em;
-        margin-left: 10em;
-        padding-left:1em;
-        width: 45%;
-
-    }
-    
-
-
-}
-
-/** media 429 px*/
-
-@media (width < 610px){
-    /**page détaillé*/
+ 
+@media (width < 429px){
     .casting{
         display: flex;
         content: "";
@@ -1273,6 +1210,8 @@ ul {
     }
 
     /**fin page detaillé*/
+    /***********************debut media BACKSTAGE**********************/
+
 
     .castingbaiser{
         flex-direction: row;
@@ -1280,7 +1219,7 @@ ul {
         height: 100%; 
         margin: 1em 0;
     }
-    
+
     .castingbaiser > figure > img {
         height: 6em;
         width: auto ;
@@ -1294,7 +1233,7 @@ ul {
         position : relative;
         width: 100%;
     }
-    
+
     .container > p > img[src="images/detaillé/NS.png"],
     .container > p > img[src="./images/detaillé/finnwolfhard.jpg"],
     .container > p > img[src="images/stranger_things_logo.png"]{
@@ -1320,7 +1259,7 @@ ul {
     {
         width: 5px;
     }
-    
+
     .listebetisier > ul > li {
         margin: 0 20px; 
         padding: 1.5em 1em;
