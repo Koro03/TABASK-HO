@@ -161,7 +161,7 @@ figure > img{
 }
 
 #bande-annonce, #episode{
-    box-shadow: -5px -5px 10px #452271, 5px 5px 10px #202020;
+    box-shadow: -5px -5px 10px #382d84, 5px 5px 10px #202020;
 }
 
 #critique, .carroussel2{
@@ -660,12 +660,8 @@ input{
 *                                                                                          *
 ********************************************************************************************/
 #section1{
-    
-    margin: 15px 15px 3em auto;
-    padding: 3em 1em 1em 1em;
     display: inline-flex;
-    width: 100%;
-    border-radius: 0px 20px 0px 20px;
+    width: 100%; 
 }
 /*******************************************************************************************
 *                           main page : présentation episode et saison                     *
