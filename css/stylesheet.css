@@ -34,8 +34,8 @@ h1{
     padding-top:10px ;
     padding-bottom: 10px;
     letter-spacing: 20px;
-
 }
+
 nav{
     display: flex;
     flex-direction: row;
@@ -152,7 +152,11 @@ figure > img{
 
 
 #fondviolet, #résumé{
+    box-shadow: inset 4.3px 4.3px 7px #644385, 5px 5px 10px #202020;
+    /**
     box-shadow: -5px -5px 10px #60437b, 5px 5px 10px #202020 ;
+    */
+    border-radius: 0 20px 0 20px;
     background-color: #5d3d7a;
 }
 
@@ -619,8 +623,6 @@ input{
 }
 
 
-
-
 /*fin barre de scroll personnalisée*/
 
 /*********************************      fin groupe annecdotes       *******************************************************/
@@ -678,9 +680,6 @@ input{
     background-color: #5d3d7a;
 }
 
-
-
-
 #limite_age{
     height: 5em;
     width: 5em;
@@ -691,11 +690,9 @@ input{
     flex-direction: column;
     width: 13em;
     margin: auto auto 5em;
-
 }
 
 #info_gen > h2{
-
     text-align: center;
 }
 
