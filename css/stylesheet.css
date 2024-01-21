@@ -167,6 +167,21 @@ figure > img{
 #critique, .carroussel2{
     box-shadow: -5px -5px 10px #3f1c76, 5px 5px 10px #202020 ;
 }
+.accueil{
+    background-color: initial;
+    box-shadow: none;
+    width: fit-content;
+}
+.accueil img{
+    margin: 0;
+    width: 32px;
+    height: 32px;
+}
+.accueil:hover{
+    background-color: initial;
+    box-shadow: none;
+    width: fit-content;
+}
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
@@ -351,6 +366,7 @@ input{
 }
 
 
+
 /*******************************************************************************************
 *                           main page : backstage                                          *
 *                                                                                          *
@@ -404,7 +420,7 @@ input{
 
 .dots {
     position: absolute;
-    bottom: 16px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     gap: 23px;
@@ -415,7 +431,7 @@ input{
 }
 
 .dots a {
-    --dots-size: 16px;
+    --dots-size: 20px;
     width: var(--dots-size);
     height: var(--dots-size);
     border-radius: 50%;
@@ -427,6 +443,7 @@ input{
 }
 
 .dots a:hover {
+    --dots-size: 25px;
     opacity: 1;
     background-color: #CF4307;
     --dots-size: 20px;
@@ -1018,8 +1035,10 @@ input{
     width: 10em;
     height: 2em;
 }
-.loupe:hover + input{
-    display: inline-block;
+.loupe{
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
 }
 .poster img{
     height: 330px;
@@ -1276,6 +1295,16 @@ ul {
         display: block;
         
     }
+    .carrousel > h1 {
+        margin: 0px 15%;
+    }
+    .midmain{
+        flex-wrap: wrap;
+    }
+    .castingbaiser{ 
+        width: 100%;
+        height: 100%; 
+    }
     
 }
 
@@ -1304,6 +1333,7 @@ ul {
     .lienEpisode_limite_age figure + img{
         width: 32px;
         height: 32px;
+        margin-top: 25px;
     }
     .lienEpisode_limite_age figure > img{
         width: 32px;
@@ -1372,7 +1402,43 @@ ul {
 
     /**fin page detaillé*/
     /***********************debut media BACKSTAGE**********************/
+    .carrousel > h1 {
+        margin: 0px 1%;
+    }
+    .slider{
+        --slide-height: clamp(240px, 25vh, 550px);
+    }
+    .slide > img{
+        height: clamp(240px, 20vh, 550px);
+    }
+    .slider-wrapper{
+        height: 32vh;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .dots{
+        bottom: 30px;
+        gap: 30px;
+    }
+    .midmain{
+        flex-wrap: wrap;
+        padding-bottom: 1em;
+        margin-bottom: 0em ;
+    }
 
+    .container.opened::before {
+        margin-bottom: -3px;
+    }
+    .container::before {
+        right: 35%;
+        left: 35%;
+    }
+    .container > p {
+        height: 93%;
+    }
+    .container::before {
+        bottom: 20px;
+    }
 
     .castingbaiser{
         flex-direction: row;
@@ -1382,7 +1448,7 @@ ul {
     }
 
     .castingbaiser > figure > img {
-        height: 6em;
+        height: 5em;
         width: auto ;
     }
     .castingbaiser > figure > figcaption{
@@ -1425,6 +1491,8 @@ ul {
         margin: 0 20px; 
         padding: 1.5em 1em;
     }
+
+    
     /***********************fin media BACKSTAGE**********************/
 
     /***********************media page accueil***********************/
@@ -1542,10 +1610,7 @@ ul {
     
 
 
-    /*******************************************************************************************
-    *                           media querry page : backstage                                  *
-    *                                                                                          *
-    ********************************************************************************************/
+    
     /********************************************************************************************
     *                           media querry page : presentation episode saison                 *
     *                                                                                           *
