@@ -40,10 +40,11 @@ nav{
     display: flex;
     flex-direction: row;
     background-color: #5d3d7a;
-    border: solid #5d3d7a;
     border-radius: 10px;
     margin: 15px;
     width: 100%;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #262c52);
+    box-shadow: inset 4.3px 4.3px 7px #6c488f;
 }
 nav a{
     color: #fff;
@@ -177,11 +178,15 @@ figure > img{
     padding: 2em;
     margin-right: 40px;
     margin-bottom:4em ;
+    border: 0;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #262c52);
+    box-shadow: inset 4.3px 4.3px 7px #6c488f;
 }
 .presentation img{
     width:550px;
     height: 50%;
     float: right;
+     filter : drop-shadow(3.4px 3.4px 3.4px rgb(0, 0, 0));
     
     
 }
@@ -193,6 +198,7 @@ figure > img{
     transition: 0.25s;
   
 }
+
 
 .mot-cle{
     display: inline-flex;
@@ -234,6 +240,8 @@ figure > img{
     display: flex;
     flex-direction: column;
     width: fit-content;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #382a76);
+    box-shadow: inset 4.3px 4.3px 7px #35459d;
     
 }
 .reward figure{
@@ -318,8 +326,23 @@ input{
     margin: 3%;
     margin-left: 10%;
     margin-right: 10%;
-    
+        
 
+}
+.oscar a{
+    color: #fff ;
+    background-color:#CF4307 ;
+    padding: 1%;
+    padding-top: 0;
+    border-radius: 5px;
+}
+.trailer{
+    border: none;
+    background-color: initial;
+}
+.trailer:hover{
+    border: none;
+    background-color: initial;
 }
 
 
@@ -1111,7 +1134,12 @@ ul {
     background-color: #2F3D8A;
 }
 /*FIN Page Présentation_série_saison*/
-
+.oscar p{
+    background-color: #2e2068;
+    border: #2e2068;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #51425e);
+    box-shadow: inset 3.3px 3.3px 6px #3c2694;
+}
 
 /*******************************************************************************************
 *                           media querry page                                              *
@@ -1198,8 +1226,7 @@ ul {
     }
     .oscar p{
         width: 80%;
-
-        background-color: #2e2068;
+        
     }
     .oscar{
         width: 50%;
