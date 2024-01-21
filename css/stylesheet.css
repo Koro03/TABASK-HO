@@ -1038,8 +1038,10 @@ input{
     width: 10em;
     height: 2em;
 }
-.loupe:hover + input{
-    display: inline-block;
+.loupe{
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
 }
 .poster img{
     height: 330px;
