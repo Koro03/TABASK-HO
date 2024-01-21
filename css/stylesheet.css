@@ -152,7 +152,8 @@ figure > img{
 
 
 #fondviolet, #résumé{
-    box-shadow: -5px -5px 10px #63487d, 5px 5px 10px #202020 ;
+    box-shadow: -5px -5px 10px #60437b, 5px 5px 10px #202020 ;
+    background-color: #5d3d7a;
 }
 
 #bande-annonce, #episode{
@@ -657,7 +658,7 @@ input{
 *                                                                                          *
 ********************************************************************************************/
 #section1{
-    background-color: #5d3d7a;
+    
     margin: 15px 15px 3em auto;
     padding: 3em 1em 1em 1em;
     display: inline-flex;
@@ -674,7 +675,7 @@ input{
     display: flex;
     flex-direction: row;
     border-radius: 30px;
-    background-color: transparent;
+    background-color: #5d3d7a;
 }
 
 
@@ -711,9 +712,6 @@ input{
 #colonnedroite{
     display: flex;
     flex-direction: column;
-    /*
-    margin: 4em 2em 4em 4em;
-    */
     margin-left: 5em;
 }
 
