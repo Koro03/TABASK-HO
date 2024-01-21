@@ -1323,6 +1323,7 @@ ul {
     .lienEpisode_limite_age figure + img{
         width: 32px;
         height: 32px;
+        margin-top: 25px;
     }
     .lienEpisode_limite_age figure > img{
         width: 32px;
