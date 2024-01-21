@@ -167,6 +167,21 @@ figure > img{
 #critique, .carroussel2{
     box-shadow: -5px -5px 10px #3f1c76, 5px 5px 10px #202020 ;
 }
+.accueil{
+    background-color: initial;
+    box-shadow: none;
+    width: fit-content;
+}
+.accueil img{
+    margin: 0;
+    width: 32px;
+    height: 32px;
+}
+.accueil:hover{
+    background-color: initial;
+    box-shadow: none;
+    width: fit-content;
+}
 /*******************************************************************************************
 *                           main page : présentation ge                                    *
 *                                                                                          *
@@ -349,6 +364,7 @@ input{
     border: none;
     background-color: initial;
 }
+
 
 
 /*******************************************************************************************
