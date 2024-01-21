@@ -1140,6 +1140,22 @@ ul {
 *                           media querry page                                              *
 *                                                                                          *
 ********************************************************************************************/
+@media (width > 1350px) {
+    #bande-annonce{
+        margin-left: 5em;
+    }
+    #critique{
+        margin: 0.5em 3em 7em 15em;
+    }
+    .carroussel2{
+        margin-left: 5em;
+    }
+    #episode{
+        margin-left: 10em;
+    }
+}
+
+
 @media (width < 1280px) {
     #section2{
         display: flex;
